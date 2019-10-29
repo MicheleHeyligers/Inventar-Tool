@@ -1,0 +1,50 @@
+/* ----- Voter List CSS ----- */
+
+.vote-action----area {
+    display: flex;
+    align-items: center;
+}
+
+.vote-item {
+    padding: 20px 15px;
+    background: $white-color;
+}
+
+.vote-actions {
+    float: left;
+    display: inline-block;
+    margin-right: 30px;
+
+    a {
+        color: $bg-default;
+        font-weight: 600;
+        display: block;
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.vote-title {
+    display: block;
+    color: inherit;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: $text-color;
+}
+
+.vote-info,
+.vote-info a {
+    color: $text-gray;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.vote-info {
+    a {
+        margin-right: 10px;
+    }
+}

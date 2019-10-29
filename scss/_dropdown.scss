@@ -1,0 +1,120 @@
+/* ----- Dropdowns ----- */
+
+.container--drop-btn {
+    .dropdown {
+        display: inline-block;
+        font-size: 16px;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+.dropdown-button {
+    background-color: $bg-default;
+    min-width: 160px;
+    color: $white-color;
+    letter-spacing: 0.025rem;
+    box-sizing: border-box;
+    padding: 10px 30px 10px 20px;
+    border-radius: 0px;
+    position: relative;
+    cursor: pointer;
+    @include transition(background .3s ease);
+    font-size: 14px;
+
+    &:hover {
+        background-color: $bg-default;
+        @include transition(background .3s ease);
+    }
+}
+
+.triangle {
+    font-size: 50%;
+    position: absolute;
+    right: 10px;
+    top: -2px;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 5px;
+    color: $white-color;
+}
+
+.dropdown {
+    ul {
+        color: $white-color;
+        transform-origin: top;
+        padding: 0;
+        list-style: none;
+        @include transform(scaleY(0));
+        @include box-shadow(0px 2px 6px 0 rgba(0, 0, 0, 0.2));
+        position: absolute;
+        left: 0;
+        margin-top: 2px;
+        top: 100%;
+        min-width: 90%;
+        @include transition(all .3s ease);
+        z-index: 999999999999;
+
+        &.active {
+            visibility: visible;
+            @include transition(all .3s ease);
+            @include transform(scaleY(1));
+            color: $text-color;
+
+            li {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.dropdown {
+    li {
+        background: $white-color;
+        padding: 8px 10px 8px 15px;
+        box-sizing: border-box;
+        cursor: pointer;
+        @include transition(background .2s ease);
+        position: relative;
+
+        &.check {
+            background: $bg-white-1;
+
+            &:after {
+                content: '';
+                position: absolute;
+                height: 15px;
+                width: 3px;
+                background-color: $bg-gray;
+                top: 0;
+                bottom: 0;
+                margin-top: auto;
+                @include transform(rotate(40deg));
+                margin-bottom: auto;
+                right: 15px;
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                height: 3px;
+                width: 9px;
+                background: $bg-gray;
+                top: 6px;
+                bottom: 0;
+                margin-top: auto;
+                @include transform(rotate(40deg));
+                margin-bottom: auto;
+                right: 19px;
+            }
+        }
+
+        &:hover {
+            background: $bg-white-1;
+            @include transition(background .2s ease);
+        }
+    }
+}

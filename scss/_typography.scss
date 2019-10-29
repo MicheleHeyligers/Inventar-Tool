@@ -1,0 +1,131 @@
+/* ----- Typography CSS ----- */
+
+.ibox-title {
+    clear: both;
+}
+
+
+.ibox-content {
+    .unorderd-list {
+        ul {
+            li {
+                list-style: disc;
+            }
+        }
+    }
+
+}
+
+.ibox-content {
+    &.ordered-list {
+        ol {
+            li {
+                list-style: url;
+            }
+        }
+    }
+}
+
+.unstyled {
+    li {
+        margin-bottom: 10px;
+    }
+}
+
+.unstyled {
+    li {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.ibox-content {
+    &.unorderd-list {
+        ul {
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.ibox-content {
+    &.unorderd-list {
+        ul {
+            li {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.ibox-content {
+    &.ordered-list {
+        ol {
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.ibox-content {
+    &.ordered-list {
+        ol {
+            li {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.list-group-item-desc-text {
+    font-size: 12px;
+}
+
+.list-group-item-desc-text {
+    &.box {
+        color: $white-color;
+    }
+}
+
+.ibox-content {
+    &.dragable {
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+}
+
+.ibox-content {
+    &.resizeable {
+        h4 {
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+
+}
+
+.ibox-title {
+    &.resizeable {
+        h6 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.list-group-item {
+    padding: 15px 30px;
+}

@@ -1,0 +1,120 @@
+/* ----- Badges CSS ----- */
+
+.badge {
+    font-weight: 500;
+    padding: 7px 20px;
+}
+
+.badge-outline-default {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px rgba(24, 28, 33, 0.1));
+    color: $dark-3;
+}
+
+.badge-outline-primary {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px $bg-default);
+    color: $bg-default;
+}
+
+.badge-outline-secondary {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px $purple-accent-3);
+    color: $purple-accent-3;
+}
+
+.badge-outline-success {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px $bg-success-color);
+    color: $bg-success-color;
+}
+
+.badge-outline-info {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px $bg-info-color);
+    color: $bg-info-color;
+}
+
+.badge-outline-warning {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px $bg-warning-color);
+    color: $text-color-3;
+}
+
+.badge-outline-danger {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px $bg-danger-color);
+    color: $bg-danger-color;
+}
+
+.badge-outline-dark {
+    background-color: transparent;
+    @include box-shadow(0 0 0 2px rgba(24, 28, 33, 0.9));
+    color: rgba(24, 28, 33, 0.9);
+}
+
+.badge-message {
+    background: $white-color;
+    color: $bg-default;
+}
+
+.btn-outline-primary {
+    .badge-message {
+        background: $bg-default;
+        color: $white-color;
+    }
+}
+
+.badge-message {
+    display: inline-block;
+    padding: .25em .417em;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    border-radius: .125rem;
+}
+
+.badge {
+    &.badge-dot {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: .5em;
+        height: .5em;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+}
+
+.badge-primary {
+    background-color: $bg-default !important;
+}
+
+.badge-secondary {
+    background-color: $badge-secondary !important;
+}
+
+.badge-success {
+    background-color: $badge-success !important;
+}
+
+.badge-info {
+    background-color: $bg-info-color !important;
+}
+
+.badge-warning {
+    background-color: $badge-warning !important;
+}
+
+.badge-danger {
+    background-color: $badge-danger !important;
+}
+
+.badge-dark {
+    background-color: $badge-dark !important;
+}
+
+.badge-light {
+    background-color: $white-color !important;
+}

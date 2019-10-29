@@ -1,0 +1,825 @@
+/* All Responsive CSS */
+
+@media (min-width: 1199px) and (max-width: 1366px) {
+
+    .table td,
+    .table th {
+        padding: 15px;
+    }
+
+    .admi-mail-body {
+        width: 360px;
+    }
+
+    .notes-pin-board .pin-board-content {
+        padding: 20px;
+    }
+
+    .notes-pin-board h4 {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1198px) {
+    .widget-head-color-box {
+        padding: 20px;
+    }
+
+    .widget-member-thumb {
+        width: 130px;
+        height: auto;
+        margin: auto;
+    }
+
+    .widgets-team-title > h2 {
+        font-size: 24px;
+    }
+
+    .widget-head-box {
+        padding: 20px;
+    }
+
+    #gallery-content-center img {
+        width: 300px;
+    }
+
+    .light-thumb {
+        width: 28%;
+    }
+
+    .timeline ul li div {
+        width: 260px;
+    }
+
+    .timeline ul li:nth-child(2n) div {
+        left: -290px;
+    }
+
+    .profile-card {
+        max-width: 560px;
+    }
+
+    .profile-card-inf__item {
+        padding: 15px;
+        min-width: 120px;
+    }
+
+    #viewport .chatbox {
+        width: 28%;
+    }
+
+    .order-list-btn- > a {
+        height: 24px;
+        width: 40px;
+        line-height: 24px;
+        font-size: 10px;
+    }
+
+    .about-us-area-thumb {
+        margin-bottom: 30px;
+    }
+
+    .about-us-area-thumb-2 {
+        margin-top: 30px;
+    }
+
+    .about-us--content .about--us-area-thumb {
+        @include flex(0 0 100%);
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-us--content .about--us-area-text {
+        @include flex(0 0 100%);
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about--us-area-thumb {
+        margin-top: 30px;
+    }
+
+    .admi-mail-checkbox {
+        margin-right: 0;
+    }
+
+    .admi-mail-body {
+        width: 330px;
+    }
+
+    .admi-mail-star {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .admi-mail-checkbox {
+        margin-right: 5px;
+        width: 25px;
+    }
+
+    .mail-pager {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .article-title > h2 {
+        font-size: 30px;
+    }
+
+    .light-thumb {
+        width: 45%;
+    }
+
+    .comingsoon_area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #clock {
+        font-size: 30px;
+    }
+
+    #clock span {
+        font-size: 13px;
+    }
+
+    .subscribe_bar > p {
+        font-size: 13px;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter {
+        width: 32%;
+    }
+
+    #gallery-content-center img {
+        width: 280px;
+    }
+
+    #viewport .chatbox {
+        width: 44% !important;
+    }
+
+    .timeline ul li:nth-child(2n) div {
+        left: -290px;
+    }
+
+    .profile-card {
+        max-width: 600px;
+    }
+
+    .order-list-btn- > a {
+        height: 24px;
+        width: 40px;
+        line-height: 24px;
+        font-size: 10px;
+    }
+
+    .about-us--content .about--us-area-thumb {
+        @include flex(0 0 100%);
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-us--content .about--us-area-text {
+        @include flex(0 0 100%);
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about--us-area-text {
+        margin-bottom: 30px;
+    }
+
+    .product-list-btn- a {
+        height: 25px;
+        width: 60px;
+        line-height: 25px;
+        font-size: 12px;
+    }
+
+    .product-en-btn a {
+        width: 40px !important;
+        height: 20px !important;
+    }
+
+    .table td,
+    .table th {
+        padding: 15px;
+    }
+
+    .admi-mail-body {
+        width: 350px;
+    }
+
+    .mail-pager {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .middle-box {
+        max-width: 270px !important;
+        padding: 30px !important;
+    }
+
+    .middle-box h1 {
+        font-size: 100px;
+    }
+
+    .bg-boxshadow {
+        padding: 20px !important;
+        display: block !important;
+    }
+
+    .appwork-faq-area dl dt {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .breadcrumb-area .breadcrumb .breadcrumb-item,
+    .breadcrumb-area .breadcrumb .breadcrumb-item a {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .copywrite-text {
+        display: block;
+        padding: 0;
+        text-align: center;
+    }
+
+    .copywrite-text > p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .footer--nav--style ul li a {
+        font-size: 12px;
+    }
+
+    .article-title > h2 {
+        font-size: 22px;
+    }
+
+    .btn.articles-btn {
+        margin-bottom: 15px;
+    }
+
+    .ibox.wizard {
+        padding: 20px;
+    }
+
+    .ibox-title-wizard > h5 {
+        font-size: 18px;
+    }
+
+    .wizard-title {
+        font-size: 16px;
+    }
+
+    .jumbotron-wizard > h4 {
+        font-size: 18px;
+    }
+
+    .widget-member-thumb {
+        width: 130px;
+        height: auto;
+        margin: auto;
+    }
+
+    .widget-head-color-box {
+        padding: 20px;
+    }
+
+    .card-body.users {
+        padding: 15px;
+    }
+
+    .btn-users {
+        margin-bottom: 10px;
+    }
+
+    .sweet-alert-use-code {
+        padding: 20px;
+    }
+
+    .masonry-grid-item--width3 {
+        width: 260px;
+    }
+
+    .light-thumb {
+        width: 100%;
+    }
+
+    .widget-head-box {
+        padding: 20px;
+    }
+
+    .table td,
+    .table th {
+        padding: 10px 3px;
+    }
+
+    .table td {
+        font-size: 12px;
+    }
+
+    .mail-ontact > a {
+        font-size: 11px;
+    }
+
+    .mail-subject > a {
+        font-size: 11px;
+    }
+
+    .articals-btn {
+        margin-top: 15px;
+    }
+
+    .fc-toolbar .fc-right {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .fc .fc-toolbar > * > :first-child {
+        font-size: 22px;
+    }
+
+    .ct-label {
+        font-size: 12px;
+    }
+
+    .comingsoon_area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #clock {
+        font-size: 24px;
+    }
+
+    #clock span {
+        font-size: 12px;
+    }
+
+    .comingsoon_area-2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #clock-2 {
+        font-size: 24px;
+    }
+
+    #clock-2 span {
+        font-size: 12px;
+    }
+
+    .subscribe_bar > p {
+        font-size: 13px;
+    }
+
+    .btn.btn-primary.inbox {
+        margin-top: 15px;
+    }
+
+    .widget-bg-icon > i {
+        font-size: 60px;
+    }
+
+    .widget-bg-icon {
+        margin-left: 15px;
+    }
+
+    .cart-table-area table tbody tr td h5 {
+        font-size: 11px;
+    }
+
+    .vote-title {
+        font-size: 14px;
+    }
+
+    .fc .fc-toolbar > * > :first-child {
+        font-size: 18px;
+    }
+
+    .fc-basic-view .fc-body .fc-row {
+        min-height: 2em;
+    }
+
+    .dt-buttons.btn-group > a {
+        padding: 8px;
+    }
+
+    div.dataTables_wrapper div.dataTables_info {
+        margin-left: 36px;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input {
+        margin-right: -75px;
+    }
+
+    .mail-box-header {
+        padding: 10px;
+    }
+
+    .invoice-box table tr.heading td {
+        padding: 5px;
+    }
+
+    [type="checkbox"] + span:not(.lever) {
+        padding-left: 20px;
+    }
+
+    .text-right.mail-date {
+        text-align: left !important;
+        padding: 0;
+    }
+
+    .page-wrapper .page-content {
+        padding: 0 !important;
+    }
+
+    .form-panel {
+        padding: 30px !important;
+    }
+
+    .form-panel.two.active {
+        left: 5% !important;
+    }
+
+
+    .check-box-text {
+        padding-left: 25px !important;
+    }
+
+    .education_desc_content {
+        padding: 15px !important;
+    }
+
+    #flot-graph,
+    #lineChart,
+    #flot-bars,
+    #flot-categories,
+    #slineChart,
+    #flot-pie,
+    #flot-bars,
+    #flot-graph {
+        height: 100%;
+        width: 100%;
+    }
+
+    #viewport .chatbox {
+        width: 14rem !important;
+    }
+
+    .code-editor {
+        width: 100% !important;
+    }
+
+    .code-editor::before {
+        top: 76px;
+    }
+
+    .code-editor span.control::before {
+        top: 85px;
+    }
+
+    .btn-group > a {
+        height: 40px !important;
+        font-size: 10px !important;
+        font-weight: 500 !important;
+        padding: 10px !important;
+    }
+
+    .message-title {
+        margin-top: 10px !important;
+        display: inline-block;
+    }
+
+    #gallery-header {
+        margin-bottom: 30px;
+    }
+
+    .card-header--index {
+        flex-wrap: wrap;
+    }
+
+    .card-header--index .card---heading--text-,
+    .card-header--index .index-1-button {
+        @include flex(0 0 100%);
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+    }
+
+    .index-1-button {
+        margin-top: 15px;
+    }
+
+    .widget-icon-index {
+        margin-top: 15px;
+    }
+
+    .todo-single-list span {
+        padding-left: 10px;
+    }
+
+    .axis {
+        width: 90%;
+    }
+
+    .small--widget-content {
+        padding: 15px;
+    }
+
+    .invoice-box.bg-boxshadow {
+        padding: 5px !important;
+    }
+
+    .invoice-box table tr td:nth-child(n+2) {
+        text-align: left !important;
+    }
+
+    .invoice-box table tr.heading td {
+        padding: 0 !important;
+    }
+
+    .container-login {
+        width: 300px;
+    }
+
+    .card-area-- .input-container {
+        margin: 0 40px;
+    }
+
+    .card-area-- .button-container {
+        margin: 20px 15px;
+    }
+
+    .card-area--.alt .toggle {
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+        line-height: 100px;
+    }
+
+    .card-area--.alt {
+        top: 11px;
+        right: 5px;
+        z-index: 10;
+        width: 100px;
+        height: 100px;
+    }
+
+    .masonry-grid-item--width2 {
+        width: 200px;
+    }
+
+    .masonry-grid-item--width3 {
+        width: 200px;
+    }
+
+    .notification-- {
+        width: 20em;
+    }
+
+    .timeline ul li div {
+        width: calc(100vw - 140px) !important;
+    }
+
+    .chat-box---area-- .left input {
+        width: 170px;
+    }
+
+    .compose-email--area .fa-paperclip {
+        display: none;
+    }
+
+    .compose-email--area input[type="file"] {
+        width: 120px;
+        float: left;
+    }
+
+    #canvas-1 {
+        width: 100% !important;
+    }
+
+    .profile-card__txt {
+        font-size: 12px;
+    }
+
+    .profile-card__name {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .profile-card-inf__item {
+        min-width: 80px;
+    }
+
+    .list-group---area {
+        margin-bottom: 30px;
+    }
+
+    .tab---button--group {
+        width: 250px;
+    }
+
+    .tab--button-- {
+        font-size: 12px;
+    }
+
+    .search-wrapper {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .admi-mail-star {
+        margin-right: 6px;
+        font-size: 12px;
+    }
+
+    .admi-mail-item {
+        padding: 10px 5px;
+    }
+
+    [type="checkbox"] + span:not(.lever)::before,
+    [type="checkbox"]:not(.filled-in) + span:not(.lever)::after {
+        width: 14px;
+        height: 14px;
+    }
+
+    .admi-mail-attachment {
+        margin-left: 0;
+    }
+
+    .ad-img-user {
+        display: none;
+    }
+
+    .team--board--tite {
+        margin-top: 15px;
+    }
+
+    .about-us-area-thumb {
+        margin-bottom: 15px;
+    }
+
+    .blog-card-info {
+        padding: 0 20px;
+    }
+
+    .comment--box-desc {
+        padding-left: 0 !important;
+    }
+
+    .matmin-list-item span {
+        font-size: 12px;
+    }
+
+    .user-page-thumb {
+        width: 100px;
+    }
+
+    .nav-tabs li a {
+        padding: 10px 20px;
+    }
+
+    .wrapper.wrapper-content--- {
+        padding: 50px 30px;
+    }
+
+    .card-area-- .button-container button {
+        width: 160px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .card-area-- .input-container {
+        margin: 30px;
+    }
+
+    .ibox-content--.password-box {
+        padding: 30px;
+    }
+
+    .card-body-top- h5 {
+        font-size: 16px;
+    }
+
+    .blog-2-content {
+        min-height: 300px !important;
+    }
+
+    .channel--part-list h5 {
+        font-size: 16px;
+    }
+
+    .notes-pin-board h4 {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .fc-toolbar .fc-center {
+        margin-top: 15px;
+    }
+
+    .cart-table-area table tbody tr td h5 {
+        font-size: 13px;
+    }
+
+    .fc-toolbar .fc-right {
+        margin-top: 0;
+    }
+
+    .account-form {
+        width: 450px;
+    }
+
+    #viewport .chatbox {
+        width: 25rem !important;
+    }
+
+    .card-body-top- {
+        display: flex;
+    }
+
+    .axis {
+        width: 78%;
+    }
+
+    .axis .tick {
+        @include flex(1);
+        position: relative;
+        font-size: 50px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .breadcrumb-area .breadcrumb .breadcrumb-item,
+    .breadcrumb-area .breadcrumb .breadcrumb-item a {
+        font-size: 16px;
+    }
+
+    .middle-box {
+        max-width: 400px !important;
+    }
+
+    .table td,
+    .table th {
+        padding: 6px;
+    }
+
+    .articals-btn {
+        margin-top: 0;
+    }
+
+    .btn.btn-primary.inbox {
+        margin-top: 0;
+    }
+
+    .table td {
+        font-size: 13px;
+    }
+
+    .fc-toolbar .fc-right {
+        margin-top: 0;
+    }
+
+    .fc-toolbar .fc-center {
+        margin-top: 0;
+    }
+
+    .inbox--area.bg-boxshadow {
+        padding: 15px !important;
+    }
+
+    .axis {
+        width: 93% !important;
+    }
+
+    .tab---button--group {
+        width: 300px;
+    }
+
+    .admi-mail-body {
+        width: 330px;
+    }
+
+    .ad-img-user {
+        display: block;
+    }
+
+    .search-wrapper {
+        width: 250px;
+    }
+}

@@ -1,0 +1,170 @@
+/* ----- Articles CSS ----- */
+.social-avatar--thumb {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.article-title {
+    h2 {
+        margin-top: 25px;
+    }
+}
+
+.comment-border---area {
+    border: 1px solid $border-color;
+    padding: 30px;
+}
+
+.comment--box-desc {
+    justify-content: space-between;
+}
+
+.article-title {
+    a {
+        font-size: 15px;
+        color: $text-color;
+    }
+}
+
+.article-title {
+    a {
+        i {
+            font-size: 13px;
+            color: $text-color;
+            letter-spacing: 1px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.articles-desc {
+    font-size: 15px !important;
+}
+
+.app-btn-xs {
+    padding: 5px 15px;
+}
+
+.btn {
+    &.articles-btn {
+        border: 1px solid $border-color;
+        background-color: $white-color;
+        padding: 5px 20px;
+        font-size: 12px;
+        border-radius: 0;
+    }
+}
+
+.article-social-feed-box {
+    &:last-child {
+        margin-bottom: 0
+    }
+}
+
+.articles-heading {
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.social- {
+    padding: 15px;
+}
+
+.social-image {
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.social-image {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.social- {
+    p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+}
+
+.articals-btn {
+    a {
+        height: 35px;
+        max-width: 100px;
+        line-height: 35px;
+    }
+}
+
+.round-img {
+    border-radius: 50%;
+}
+
+.media-body {
+    a {
+        font-size: 14px;
+        color: #333;
+        font-weight: 500;
+    }
+}
+
+.media-body {
+    span {
+        font-size: 11px;
+    }
+}
+
+.famie-blockquote {
+    position: relative;
+    z-index: 1;
+    margin: 50px 0;
+}
+
+.quote-icon {
+    i {
+        font-size: 40px;
+        margin-right: 20px;
+        color: $bg-default;
+    }
+}
+
+.famie-blockquote {
+    .quote-text {
+        span {
+            color: $bg-default;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
+
+.famie-blockquote {
+    .quote-text {
+        h5 {
+            font-weight: 500;
+            line-height: 2;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.articals-tag-btn {
+    a {
+        height: 30px !important;
+        width: 80px !important;
+        display: inline-block !important;
+        font-size: 12px !important;
+        line-height: 30px !important;
+        text-align: center !important;
+        padding: 0 5px !important;
+    }
+}
+
+.post-a-comment-area {
+    border: 1px solid #ebebeb;
+}

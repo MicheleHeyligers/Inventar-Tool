@@ -1,0 +1,14 @@
+/* ----- Form valadation -----  */
+
+.help-block {
+    ul {
+        li {
+            color: $red-accent-2;
+            margin-top: 10px;
+        }
+    }
+}
+
+.form-control-feedback {
+    margin-top: 10px;
+}

@@ -1,0 +1,59 @@
+/* ----- Selected And Tag Area CSS ----- */
+
+.btn-select-tag {
+    border: 1px solid $border-color;
+    background-color: $white-color;
+    padding: 10px 15px;
+    border-radius: 0;
+}
+
+.bootstrap-select {
+    .dropdown-menu {
+        li {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.multiselect-container {
+    &.dropdown-menu {
+        &.show {
+            background-color: $white-color;
+            border-radius: 0;
+            border: 1px solid $border-color;
+        }
+    }
+}
+
+.multiselect {
+    border-radius: 0;
+    background-color: $white-color !important;
+    padding: 10px 15px;
+}
+
+.multiselect-container > li > a > label.radio,
+.multiselect-container > li > a > label.checkbox {
+    font-size: 12px;
+}
+
+.tag.badge.badge-default,
+.tag.badge.badge-dark,
+.tag.badge.badge-info,
+.tag.badge.badge-secondary,
+.tag.badge.badge-warning,
+.tag.badge.badge-success,
+.tag.badge.badge-danger,
+.tag.badge.badge-primary,
+.tag.label.label-info {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 0;
+}
+
+.bootstrap-tagsinput {
+    border: 1px solid $border-color;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}

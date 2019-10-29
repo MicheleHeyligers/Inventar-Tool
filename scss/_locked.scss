@@ -1,0 +1,40 @@
+/* ----- Locked Screen CSS ----- */
+
+.screen_thumb {
+    width: 80px;
+    height: auto;
+    margin: auto;
+}
+
+.locked_screen_deti {
+    h3 {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+}
+
+.locked_screen_deti {
+    p {
+        font-weight: 400;
+    }
+
+}
+
+.btn {
+    &.btn-primary {
+        &.lock_screen {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+
+}
+
+.wrapper.wrapper-content--- {
+    @include display-flex(flex);
+    @include justify-content-center;
+    @include align-items-center;
+    width: 100%;
+    min-height: 100vh;
+}

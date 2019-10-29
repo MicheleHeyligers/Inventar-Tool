@@ -1,0 +1,99 @@
+.holder-masonary .panel-masonary {
+    position: relative;
+    height: 300px;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow 0.3s cubic-bezier(0.22, 0.86, 0.68, 0.95);
+}
+
+.panel-masonary:nth-child(1) {
+    background-color: $bg-secondary;
+}
+
+.panel-masonary:nth-child(2) {
+    background-color: $bg-success-color;
+}
+
+.panel-masonary:nth-child(3) {
+    background-color: $bg-coco;
+}
+
+.panel-masonary:nth-child(4) {
+    background-color: $pink-darken-4;
+}
+
+.panel-masonary:nth-child(5) {
+    background-color: $purple-darken-4;
+}
+
+.panel-masonary:nth-child(6) {
+    background-color: $purple-accent-3;
+}
+
+.panel-masonary:nth-child(7) {
+    background-color: $pink-lighten-1;
+}
+
+.panel-masonary:nth-child(8) {
+    background-color: $badge-warning;
+}
+
+.panel-masonary:nth-child(9) {
+    background-color: $bg-info-color;
+}
+
+.panel-masonary:hover {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(1):hover {
+    box-shadow: 0 0 0 20px $bg-secondary;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(2):hover {
+    box-shadow: 0 0 0 20px $bg-success-color;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(3):hover {
+    box-shadow: 0 0 0 20px $bg-coco;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(4):hover {
+    box-shadow: 0 0 0 20px $pink-darken-4;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(5):hover {
+    box-shadow: 0 0 0 20px $purple-darken-4;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(6):hover {
+    box-shadow: 0 0 0 20px $purple-accent-3;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(7):hover {
+    box-shadow: 0 0 0 20px $pink-lighten-1;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(8):hover {
+    box-shadow: 0 0 0 20px $badge-warning;
+    z-index: 10;
+}
+
+.panel-masonary:nth-child(9):hover {
+    box-shadow: 0 0 0 20px $bg-info-color;
+    z-index: 10;
+}
+
+.panel--wide {
+    width: 400px;
+}

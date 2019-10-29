@@ -1,0 +1,37 @@
+/* ----- Breadcrumb area ----- */
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-left: 15px;
+
+    .breadcrumb-item {
+        a {
+            &:hover {
+                color: $white-opacity-7;
+            }
+        }
+    }
+
+    &.third {
+        background-color: $bg-info-color !important;
+    }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: $white-color;
+}
+
+.breadcrumb-title-- {
+    font-weight: 300;
+    color: #555;
+}
+
+.breadcrumb-item-2 {
+    color: #333;
+}
+
+.bradcrumb---page-name.list-inline-item > i {
+    color: #fff;
+    padding-left: 5px;
+}

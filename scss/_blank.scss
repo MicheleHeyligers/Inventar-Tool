@@ -1,0 +1,20 @@
+/* ----- Blank Page CSS ----- */
+
+.blank-title {
+    font-size: 36px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.btn {
+    &.btn-primary {
+        &.blank {
+            padding: 10px 30px;
+            font-size: 14px;
+        }
+    }
+}
+
+.copyright-text-passw {
+    font-size: 12px;
+}

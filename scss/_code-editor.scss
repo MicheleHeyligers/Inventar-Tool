@@ -1,0 +1,197 @@
+/* ----- Code editor ----- */
+
+.code-editor:before,
+.code-editor:after,
+.code-editor span.control:before,
+.code-editor span.after:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    @include transition(all .5s ease-in-out);
+}
+
+.code-editor {
+    transition: all .5s ease-in-out;
+
+    .code-editor {
+        span {
+            &.control {
+                &:nth-child(1) {
+                    &:before {
+                        margin-left: 15px;
+                        background-color: $red-accent-2;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &:before {
+                        margin-left: 35px;
+                        background-color: $pink-lighten-3;
+                    }
+                }
+
+                &:nth-child(3) {
+                    &:before {
+                        margin-left: 55px;
+                        background-color: $bg-success-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.code-editor {
+    width: 100%;
+
+    @media#{$breakpoint-md} {
+        width: 100% !important;
+    }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: $bg-gray;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0em 0;
+    height: 500px;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background-color: $dark-3;
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    -moz-border-radius: .3em;
+    -o-border-radius: .3em;
+    -webkit-border-radius: .3em;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: $text-color;
+}
+
+.token.punctuation {
+    color: $text-color;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace {
+    color: $red-accent-2;
+}
+
+.token.function-name {
+    color: $bg-info-color;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+    color: $text-color-warning;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+    color: $text-color-warning;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+    color: $pink-lighten-3;
+}
+
+.token.string,
+.token.attr-value,
+.token.regex,
+.token.variable {
+    color: text-secondary;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+    color: text-secondary;
+}
+
+.token.important {
+    font-weight: bold;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+pre.line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+    padding-bottom: 1px;
+
+    code {
+        position: relative;
+    }
+}
+
+.line-numbers {
+    .line-numbers-rows {
+        position: absolute;
+        pointer-events: none;
+        top: 0;
+        font-size: 100%;
+        left: -13em;
+        width: 3em;
+        letter-spacing: -1px;
+        background-color: $dark-4;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        span {
+            pointer-events: none;
+            display: block;
+            counter-increment: linenumber;
+        }
+    }
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: $bg-gray;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+}

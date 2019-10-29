@@ -1,0 +1,267 @@
+/* ----- Team CSS - 1 ----- */
+
+.team-1--content-area {
+    .team-1--desc--area {
+        position: relative;
+        z-index: 1;
+
+        .team-1-thumb-- {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .team-hover--additional-- {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 99;
+            transition: all .5s ease;
+            opacity: 0;
+            overflow: hidden;
+
+            .team-1--icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+
+                li {
+                    a {
+                        i {
+                            color: $text-success-color;
+                            font-size: 16px;
+                            margin: 0 5px;
+                            height: 35px;
+                            width: 35px;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            line-height: 35px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover .team-hover--additional-- {
+        opacity: 1;
+    }
+
+    .team-details--content--- {
+        .team-member--1 {
+            h5 {
+                font-weight: 400;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.team-border--area {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 0.78571rem;
+}
+
+.team-border--area::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #bbb;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.team-1--content-area:hover .team-border--area::after {
+    width: 100%;
+    background: #72c02c;
+}
+
+
+/* ----- Team CSS - 2 ----- */
+
+.teams_content_area {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+    }
+
+    &:hover {
+        .team_hover_effect_1 {
+            @include transform(scale(1));
+            opacity: 1;
+        }
+    }
+}
+
+.team_hover_effect_1 {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    padding: 20px;
+    background-color: rgba(254, 84, 30, 0.8);
+    text-align: center;
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+    transition: opacity 0.4s, -webkit-transform 0.4s;
+    -o-transition: transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s, -webkit-transform 0.4s;
+}
+
+.team_text {
+    h5 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        color: $white-color;
+    }
+
+    p {
+        color: $white-color;
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: 300;
+    }
+}
+
+/* ----- Style 2 ----- */
+
+.team_hover_effect_2 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding: 20px;
+    color: $white-color;
+    overflow: hidden;
+    -webkit-transform: translateY(100%) translateY(-90px);
+    -ms-transform: translateY(100%) translateY(-90px);
+    transform: translateY(100%) translateY(-90px);
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.85)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.teams_content_area {
+    &:hover {
+        .team_hover_effect_2 {
+            -webkit-transform: translateY(0px) translateY(0px);
+            -ms-transform: translateY(0px) translateY(0px);
+            transform: translateY(0px) translateY(0px);
+            opacity: 1;
+        }
+    }
+}
+
+.team_text {
+    &.style_2 {
+        h5 {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.personal_team_info {
+    p {
+        color: $white-color;
+    }
+}
+
+.team_icon_info {
+    a {
+        i {
+            color: $white-color;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.teams_content_area {
+    img {
+        @include transition(700ms);
+    }
+
+    &:hover {
+        img {
+            @include transform(scale(1.1));
+        }
+    }
+}
+
+.team_icon_info_style_3 {
+    a {
+        i {
+            font-size: 12px;
+            color: $text-color;
+            border: 1px solid $border-color;
+            height: 30px;
+            border-radius: 50px;
+            width: 30px;
+            line-height: 28px;
+            margin: 0 5px;
+            @include transition(500ms);
+
+            &:hover {
+                background-color: $bg-default;
+                color: $white-color;
+                border-color: $bg-default;
+            }
+        }
+    }
+}
+
+.team_text_style_3 {
+    h5 {
+        margin-top: 20px;
+    }
+}
+
+
+/* ----- Teams Board ----- */
+
+
+.team-board-content {
+    li {
+        font-size: 14px;
+
+        .team-board--icon {
+            color: #26a69a;
+            font-size: 18px !important;
+        }
+    }
+}

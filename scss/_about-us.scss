@@ -1,0 +1,70 @@
+/* ----- About us Area CSS ----- */
+
+.about-us-area-text {
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        color: $heading-color;
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+
+    @media #{$breakpoint-xs} {
+        font-size: 20px;
+    }
+}
+
+.about-us--content {
+    .about--us-area-thumb {
+        @include flex(0 0 50%);
+        max-width: 50%;
+        width: 50%;
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        @media #{$breakpoint-md} {
+            margin-bottom: 30px;
+        }
+
+        @media #{$breakpoint-xs} {
+            margin-bottom: 30px;
+        }
+    }
+
+    .about--us-area-text {
+        @include flex(0 0 50%);
+        max-width: 50%;
+        width: 50%;
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+        }
+
+        h6 {
+            font-size: 16px;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.about-us-area-thumb-2 {
+    @media #{$breakpoint-md} {
+        margin-top: 30px;
+    }
+
+    @media #{$breakpoint-xs} {
+        margin-top: 30px;
+    }
+}

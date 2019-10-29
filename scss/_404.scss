@@ -1,0 +1,358 @@
+/* ----- 404 CSS ----- */
+.error {
+    .digit {
+        width: 150px;
+        height: 150px;
+        font-size: 120px;
+        font-weight: bold;
+        line-height: 150px;
+        position: relative;
+        top: 8%;
+        color: $white-color;
+        background: $bg-default;
+        border-radius: 50%;
+        display: inline-block;
+        @include transform(skew(45deg));
+
+        @media #{$breakpoint-xs} {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        @media #{$breakpoint-xs-landscape} {
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            line-height: 80px;
+        }
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+
+    span {
+        .triangle {
+            top: 70%;
+            right: 0%;
+            border-left: $border-color;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+    }
+
+    .container-error-404 {
+        @include display-flex(flex);
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 100%;
+
+        .clip {
+            display: inline-block;
+            @include transform(skew(-45deg));
+
+            .shadow {
+                overflow: hidden;
+                height: 180px;
+
+                @media #{$breakpoint-xs} {
+                    height: 80px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                .shadow {
+                    overflow: hidden;
+                    position: relative;
+                    @include box-shadow(20px 0px 20px -15px rgba(150, 150, 150, 0.8));
+                    width: 130px;
+
+                    @media #{$breakpoint-xs} {
+                        width: 80px;
+                    }
+                }
+
+                .digit {
+                    left: -10%;
+                }
+            }
+
+            &:nth-of-type(3) .shadow:after,
+            &:nth-of-type(1) .shadow:after {
+                content: "";
+                position: absolute;
+                right: -8px;
+                bottom: 0px;
+                z-index: 9999;
+                height: 100%;
+                width: 10px;
+                background: linear-gradient(90deg, transparent, rgba(173, 173, 173, 0.8), transparent);
+                border-radius: 50%;
+            }
+
+            &:nth-of-type(1) {
+                .digit {
+                    right: -20%;
+                }
+            }
+
+            &:nth-of-type(3) {
+                .shadow {
+                    &:after {
+                        left: -8px;
+                    }
+                }
+
+                .digit {
+                    left: -20%;
+                }
+            }
+
+            .error .clip:nth-of-type(1) .shadow,
+            .error .clip:nth-of-type(3) .shadow {
+                width: 250px;
+
+                @media #{$breakpoint-xs} {
+                    width: 85px;
+                }
+
+                @media #{$breakpoint-xs-landscape} {
+                    width: 130px;
+                }
+
+            }
+        }
+    }
+}
+
+.snow-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+
+    .snow {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+        -webkit-animation: snow linear infinite;
+        animation: snow linear infinite;
+    }
+
+    .snow {
+        &.foreground {
+            background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+            -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+
+            &.layered {
+                @include animation(7.5s);
+            }
+        }
+    }
+
+    .snow {
+        &.middleground {
+            background-image: image-url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+            @include animation(20s);
+
+            &.layered {
+                @include animation(10s);
+            }
+        }
+    }
+
+    .snow {
+        &.background {
+            background-image: image-url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+            @include animation(30s);
+
+            &.layered {
+                @include animation(15s);
+            }
+        }
+    }
+}
+
+
+@-webkit-keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}
+
+@keyframes snow {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(15%, 100%, 0);
+        transform: translate3d(15%, 100%, 0);
+    }
+}
+
+
+/* ----- 404 -2 CSS ---- */
+
+.error-container {
+    text-align: center;
+    font-size: 100px;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+
+    > span {
+        display: inline-block;
+        position: relative;
+
+        &.four {
+            width: 136px;
+            height: 43px;
+            border-radius: 999px;
+            background: linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
+                linear-gradient(105deg, transparent 0%, transparent 40%, rgba(0, 0, 0, 0.06) 41%, rgba(0, 0, 0, 0.07) 76%, transparent 77%, transparent 100%),
+                linear-gradient(to right, #d81b60, #ad1457);
+
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                border-radius: 999px;
+            }
+
+            &:before {
+                width: 43px;
+                height: 156px;
+                left: 60px;
+                bottom: -43px;
+                background: linear-gradient(128deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 40%, transparent 41%, transparent 100%),
+                    linear-gradient(116deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 50%, transparent 51%, transparent 100%),
+                    linear-gradient(to top, #e53935, #d32f2f, #ad1457, #c2185b, #e53935);
+
+                @media #{$breakpoint-xs} {
+                    height: 120px;
+                    width: 30px;
+                }
+            }
+
+            &:after {
+                width: 137px;
+                height: 43px;
+                transform: rotate(-49.5deg);
+                left: -18px;
+                bottom: 36px;
+                background: linear-gradient(to right, #e53935, #d32f2f, #ad1457, #c2185b, #e53935);
+
+                @media #{$breakpoint-xs} {
+                    width: 100px;
+                    height: 30px;
+                }
+            }
+
+            @media #{$breakpoint-xs} {
+                width: 100px;
+                height: 30px;
+            }
+        }
+
+        &.zero {
+            vertical-align: middle;
+            width: 156px;
+            height: 156px;
+            border-radius: 999px;
+            background: linear-gradient(-45deg, transparent 0%, rgba(0, 0, 0, 0.06) 50%, transparent 51%, transparent 100%),
+                linear-gradient(to top right, #e53935, #d32f2f, #ad1457, #c2185b, #e53935);
+            overflow: hidden;
+            animation: bgshadow 5s infinite;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                transform: rotate(45deg);
+                width: 90px;
+                height: 90px;
+                background-color: transparent;
+                left: 0px;
+                bottom: 0px;
+                background: linear-gradient(95deg, transparent 0%, transparent 8%, rgba(0, 0, 0, 0.07) 9%, transparent 50%, transparent 100%),
+                    linear-gradient(85deg, transparent 0%, transparent 19%, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.07) 91%, transparent 92%, transparent 100%);
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                border-radius: 999px;
+                width: 70px;
+                height: 70px;
+                left: 43px;
+                bottom: 43px;
+                background-color: $white-opacity-7;
+                box-shadow: -2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+
+                @media #{$breakpoint-xs} {
+                    width: 50px;
+                    height: 50px;
+                    left: 25px;
+                    bottom: 24px;
+                }
+            }
+
+            @media #{$breakpoint-xs} {
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        .screen-reader-text {
+            position: absolute;
+            top: -9999em;
+            left: -9999em;
+        }
+    }
+}
+
+.link-container {
+    text-align: center;
+}
+
+@keyframes bgshadow {
+    0% {
+        box-shadow: inset -160px 160px 0px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    45% {
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    55% {
+        box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    100% {
+        box-shadow: inset 160px -160px 0px 5px rgba(0, 0, 0, 0.4);
+    }
+}

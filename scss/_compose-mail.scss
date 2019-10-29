@@ -1,0 +1,33 @@
+/* ----- Compose mail Area CSS ----- */
+ul.wysihtml5-toolbar a.btn.wysihtml5-command-active {
+    @include box-shadow(none);
+    background-color: $bg-opacity-default-7;
+    outline: 0;
+}
+
+.mail-box-header {
+    &.view {
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+.btn.btn-orange.btn-file.compo-email {
+    @media#{$breakpoint-xs} {
+        width: 100%;
+    }
+
+}
+
+.compose-email--area {
+    .dropdown {
+        li {
+            padding: 0 !important;
+        }
+
+        a {
+            font-size: 12px !important;
+            font-weight: 500 !important;
+            padding: 10px 15px !important;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/* ----- Index-2 Css Area ----- */
+.user--img {
+    @include flex(0 0 70px);
+    width: 70px;
+    display: inline-block;
+    max-width: 70px;
+}
+
+.user--img- {
+    @include flex(0 0 120px);
+    width: 120px;
+    display: inline-block;
+    max-width: 120px;
+}
+
+.user-media-content- {
+    @include display-flex(flex);
+    @include align-items-center;
+}
+
+.user--media-body {
+    margin-left: 15px;
+}

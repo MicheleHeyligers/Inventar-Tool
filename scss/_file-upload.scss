@@ -1,0 +1,16 @@
+/* ----- File upload CSS ----- */
+
+.file-upload-title {
+    margin-bottom: 30px;
+}
+
+.file-upload-btn {
+    &.btn {
+        &.btn-secondary {
+            border-radius: 2px;
+            padding: 10px 15px;
+            margin: 0 5px;
+        }
+    }
+
+}

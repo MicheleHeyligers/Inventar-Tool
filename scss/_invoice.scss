@@ -1,0 +1,107 @@
+/* ----- Invoice CSS ----- */
+
+.invoice-box {
+    padding: 30px;
+    border: 1px solid #eaeaea;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+
+    table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+
+        td {
+            padding: 5px;
+            vertical-align: top;
+
+            &:nth-child(n+2) {
+                text-align: right;
+                vertical-align: middle;
+            }
+
+            &.title {
+                font-size: 45px;
+                line-height: 45px;
+                color: $text-color;
+            }
+        }
+
+        tr {
+            &.information {
+                table {
+                    td {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            &.heading {
+                td {
+                    background-color: $bg-white-1;
+                    color: $text-color;
+                    font-size: 14px;
+                    border: 1px solid $border-color;
+                    padding: 5px 10px;
+                }
+
+            }
+
+            &.details {
+                td {
+                    padding-bottom: 20px;
+                }
+
+            }
+
+            &.item {
+                &.last {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+
+                input {
+                    padding-left: 5px;
+                    font-size: 14px;
+                }
+
+                td {
+                    &:first-child {
+                        input {
+                            margin-left: 0;
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+
+            &.total {
+                td {
+                    &:nth-child(2) {
+                        border-top: 2px solid $bg-white-1;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.information {
+    tr {
+        border-bottom: none;
+    }
+
+}
+
+.invoice-box input[type=number] {
+    width: 60px;
+}
+
+.total-conut-invoice {
+    padding: 15px 0 !important;
+    font-weight: 500 !important;
+}

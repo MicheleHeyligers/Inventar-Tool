@@ -1,0 +1,68 @@
+/* ----- Data Table CSS ----- */
+
+.html5buttons-tables {
+    float: right;
+}
+
+.dataTables_length {
+    float: left;
+    margin: 0 50px;
+}
+
+.page-item {
+    &.active {
+        .page-link {
+            background-color: $bg-success-color;
+            border-color: $bg-success-color;
+        }
+    }
+}
+
+.page-link {
+    &:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+/* Swiper Slider CSS */
+
+.swiper-container {
+    .swiper-slide {
+        padding: 0;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: $bg-gray;
+    }
+}
+
+#swiper-vertical {
+    max-height: 195px;
+}
+
+#swiper-3d-cube-effect {
+    max-width: 300px;
+}
+
+#swiper-3d-coverflow-effect {
+    .swiper-slide {
+        max-width: 300px;
+    }
+}
+
+#swiper-3d-flip-effect,
+#swiper-3d-flip-effect .swiper-slide {
+    max-width: 350px;
+}
+
+.swiper-slide {
+    &.img {
+        padding: 0;
+    }
+}
+
+.carousel-caption {
+    h3 {
+        color: $red-darken-1;
+    }
+}

@@ -1,0 +1,41 @@
+/* ----- Google Map ----- */
+
+#google-map {
+    iframe {
+        height: 300px;
+        width: 100%;
+        border: none;
+    }
+}
+
+#google-map-3 {
+    iframe {
+        height: 300px;
+        width: 100%;
+        border: none;
+    }
+
+}
+
+#google-map-2 {
+    iframe {
+        height: 300px;
+        width: 100%;
+        border: 10px solid $border-color-secondary;
+    }
+
+}
+
+#google-map-4 {
+    iframe {
+        height: 300px;
+        width: 100%;
+        border: 10px solid $border-color-secondary;
+    }
+
+}
+
+.map_area {
+    height: 300px;
+    width: 100%;
+}

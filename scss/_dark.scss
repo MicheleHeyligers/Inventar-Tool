@@ -1,0 +1,462 @@
+.template-dark {
+    p {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .settings-panel,
+    .matmin-header-area,
+    .side-menu-area,
+    .page-wrapper .left-sidebar-area::after,
+    .matmin-footer,
+    .bg-boxshadow,
+    .bg-boxshadow--,
+    .price-table,
+    #viewport .chatbox,
+    .sendBox,
+    .mail-box-header,
+    .mail-attachment,
+    .file .file-name,
+    .widget-content-style.one,
+    .todo-list li,
+    .vertical-timeline-content,
+    .admi-mail-item,
+    .card,
+    .center-orientation .vertical-timeline-content,
+    .card-header {
+        background-color: #1f1f2c !important;
+    }
+
+    .matmin-header-area {
+
+        .full-screen-mode > a,
+        .top-left-side-nav .dropdown .btn,
+        .top-bar-nav .dropdown .btn {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .top-left-side-nav .dropdown .btn:hover,
+        .top-left-side-nav .dropdown .btn:focus,
+        .top-bar-nav .dropdown .btn:hover,
+        .top-bar-nav .dropdown .btn:focus {
+            color: #fff !important;
+        }
+    }
+
+    .page-wrapper {
+        .page-content {
+            background-color: #252525;
+        }
+
+    }
+
+    .bg-boxshadow {
+        box-shadow: 0 0 21px 5px rgba(255, 255, 255, 0.05);
+    }
+
+    .footer--nav--style ul li a,
+    .intro-heading h5,
+    .timeline-item-content h5,
+    .timeline-item-content .date,
+    .timeline-item-content .content h6,
+    .profile_thumb_content .media-body-content h4,
+    .bg-boxshadow h6 {
+        color: $white-color;
+    }
+
+    .settings-panel .setting-title,
+    .vertical-date,
+    .nav-item.user-btn--- > a,
+    .form-control,
+    .text-muted,
+    .vote-title,
+    .blog_2_content_area .blog_desc_content .blog_2_date a,
+    .blog_2_content_area .blog_desc_content a h5,
+    .card-title--,
+    .card-title---,
+    .layout-example-block code,
+    .nav-tabs li a,
+    .nav-pills li a,
+    .article-title a,
+    .team--board--tite,
+    .team-board-content,
+    .media-body a,
+    .agile-list .warning-element .agile-header h6,
+    .agile-list .warning-element span,
+    .invoice-box table td,
+    .team-border--area,
+    .select-wrapper input.select-dropdown,
+    .category-list li a,
+    .mail-tools.tooltip-demo h3,
+    .admi-mail-from,
+    .ibox-content span,
+    .chips .input,
+    .sendBox,
+    .float-right,
+    .mail-subject--text--,
+    .folder-list li a,
+    .text-dark {
+        color: #fff !important;
+    }
+
+    .bg-boxshadow h5,
+    .user-name-title,
+    .user-view-table td {
+        color: $white-color;
+    }
+
+    .table {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .table td,
+    .table th {
+        color: $white-color;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .background-color-white {
+        background-color: #1f1f2c !important;
+    }
+
+    .border-1px {
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    }
+
+    tr {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .ct-label,
+    .bg-boxshadow-- h5,
+    .knob-label,
+    .day-number,
+    .day-name,
+    .price-content ul li {
+        color: $white-color;
+    }
+
+    .mail-box-header {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .inbox-title h2,
+    .weather-day-name,
+    .weather-temp-area {
+        color: $white-color;
+    }
+
+    .weather-box-footer {
+        color: $white-color;
+        border-top: none;
+    }
+
+    .bg-white {
+        background-color: #1f1f2c !important;
+    }
+
+    .widget---content-text h6 {
+        color: $white-color;
+    }
+
+    .small-widget--text h6 {
+        color: $white-color;
+    }
+
+    .widget-content-style {
+        color: $white-color;
+    }
+
+    .widget-content--text {
+        color: $white-color;
+    }
+
+    .todo-single-list span {
+        color: $white-color;
+    }
+
+    .pin-board---area h5 {
+        color: $white-color;
+    }
+
+    .fc-left > h2 {
+        color: $white-color;
+    }
+
+    .fc-basic-view th.fc-week-number,
+    .fc-basic-view th.fc-day-number {
+        color: $white-color;
+    }
+
+    .fc-day-header > span,
+    .fc-basic-view .fc-day-top .fc-day-number {
+        color: $white-color;
+    }
+
+    .timer-desc h3 {
+        color: $white-color;
+    }
+
+    .timer-icon {
+        color: $white-color;
+    }
+
+    pre {
+        color: $white-color;
+    }
+
+    .gallery-header-center-right-links {
+        color: $white-color;
+    }
+
+    .animation-button-area-2 h5 {
+        color: $white-color;
+    }
+
+    .form-group small {
+        color: $text-color-3;
+    }
+
+    .team_icon_info_style_3 a i {
+        color: $white-color;
+    }
+
+    .ibox.teams {
+        border: none;
+    }
+
+    .ibox-content.teams {
+        color: $white-color;
+    }
+
+    .teams-rank {
+        color: $white-color;
+    }
+
+    .invoice-box {
+        border: none;
+    }
+
+    .invoice-box table tr.heading td {
+        border: none;
+        background-color: #1f1f2c;
+    }
+
+    .invoice-box table tr.item td:first-child input,
+    .invoice-box table tr.item input {
+        color: #fff;
+    }
+
+    .agile-list li {
+        background-color: #1f1f2c;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .ibox-content.blog a h4 {
+        color: $white-color;
+    }
+
+    .blog-date > a {
+        color: $text-color-3;
+    }
+
+    .article-title h2 {
+        color: $white-color;
+    }
+
+    .articles-heading h2,
+    .accordion .card- .card-header- a {
+        color: $white-color;
+    }
+
+    .matmin-faq-area dl dt,
+    .matmin-faq-area dl dd p {
+        color: $white-color;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .card-body {
+        color: $text-color-3;
+    }
+
+    .contact-box {
+        border: none;
+        background-color: #1f1f2c;
+    }
+
+    .contact-team-details h5 {
+        color: $white-color;
+    }
+
+    .team-contact-add h6 {
+        color: $white-color;
+    }
+
+    .cont-team-titl h6 {
+        color: $text-color-3;
+    }
+
+    .panel-title a {
+        color: $white-color;
+    }
+
+    .panel-body {
+        color: $text-color-3;
+    }
+
+    .ibox-content--heading address {
+        color: $text-color-3;
+    }
+
+    .ibox-content--heading h1,
+    .ibox-content--heading h2,
+    .ibox-content--heading h3,
+    .ibox-content--heading h4,
+    .ibox-content--heading h5,
+    .ibox-content--heading h6 {
+        color: $white-color;
+    }
+
+    .rounded h1,
+    .rounded h2,
+    .rounded h3,
+    .rounded h4,
+    .rounded h5,
+    .rounded h6 {
+        color: $white-color;
+    }
+
+    .blockquote {
+        color: $white-color;
+    }
+
+    #timer-countup {
+        color: $white-color;
+    }
+
+    #timer-countercallback {
+        color: $white-color;
+    }
+
+    #timer-outputpattern,
+    .counters-container .counter-text {
+        color: $white-color;
+    }
+
+    .counters-container .counter .chart span {
+        color: $white-color;
+    }
+
+    .tour-btn h3 {
+        color: $white-color;
+    }
+
+    .show-grid {
+        color: $white-color;
+    }
+
+    .how-work-grid li {
+        color: $text-color-3;
+    }
+
+    #world-map-markers .jvectormap-container {
+        background-color: transparent !important;
+    }
+
+    .footable-odd {
+        background-color: #222;
+    }
+
+    .card-body h6 {
+        color: $white-color;
+    }
+
+    .vote-item {
+        background-color: #1f1f2c;
+    }
+
+    .ibox-content.video h4 {
+        color: $white-color;
+    }
+
+    .single_icon i {
+        color: $white-color;
+    }
+
+    #morris-donut-chart text {
+        fill: #fff;
+    }
+
+    .user--media-body span {
+        color: $text-color-3;
+    }
+
+    .matmin-list-item span {
+        color: $text-color-3;
+    }
+
+    .chat-box---area-- .left input {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+    }
+
+    .chat-box---area-- .left .people .person,
+    .chat-box---area-- .right,
+    .chat-box---area-- .right .top {
+        background-color: transparent;
+    }
+
+    .chat-box---area-- .left .people .person .preview {
+        color: $text-color-3;
+    }
+
+    .chat-box---area-- .left .people .person.active .preview {
+        color: #fff;
+    }
+
+    .chat-box---area-- .left .people .person .name,
+    .chat-box---area-- .right .conversation-start span,
+    .chat-box---area-- .right .top span .name {
+        color: #fff;
+    }
+
+    .chat-box---area-- .right .chat {
+        border: none;
+    }
+
+    .chat-box---area-- .right .top span {
+        color: $text-color-3;
+    }
+
+    .widget-new-content {
+        border: none;
+    }
+
+    .small--widget-content {
+        border: none;
+    }
+
+    .bg-boxshadow,
+    .blog_2_content_area {
+        border: none;
+    }
+
+    .bg-boxshadow--,
+    .animation-button-area-2 {
+        border: none;
+    }
+
+    .card-wizard-index,
+    .sweet-alert-content {
+        border: none;
+    }
+
+    .warning-element .agile-header h6 {
+        color: #fff;
+    }
+
+    .warning-element span {
+        color: #fff;
+    }
+}

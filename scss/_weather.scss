@@ -1,0 +1,76 @@
+//:: Weather Area CSS
+
+.weather-location {
+    input {
+        background-color: rgba(0, 0, 0, .5);
+        border: 1px solid rgba(255, 255, 255, .5);
+
+        &:focus {
+            border: 1px solid rgba(255, 255, 255, .7);
+        }
+    }
+}
+
+.weather-day {
+    border-left: 1px solid rgba(0, 0, 0, .05);
+
+    &.is-today {
+        border-left: none;
+    }
+}
+
+.card-footer {
+    padding: 15px;
+}
+
+.weather-icon {
+    canvas {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.weather-box-footer {
+    border-top: 1px solid $border-color;
+    margin-top: 15px;
+}
+
+.weather-icon-- {
+    a {
+        border-radius: 50% !important;
+
+        i {
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+
+}
+
+.weather-temp-area {
+    padding: 10px 5px;
+
+    i {
+        color: $bg-default;
+    }
+}
+
+
+.box-header--weather- {
+    a {
+        font-weight: 600;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.weather-day-name {
+    @media#{$breakpoint-xs} {
+        font-size: 13px;
+    }
+}
+
+.box-header--weather- > a {
+    border-radius: 50% !important;
+}

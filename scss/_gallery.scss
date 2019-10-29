@@ -1,0 +1,19 @@
+/* ----- Gallery Area CSS ----- */
+
+.light-thumb {
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+
+    img {
+        width: 100%;
+    }
+}
+
+#gallery-content-center {
+    img {
+        @media#{$breakpoint-xl} {
+            width: 280px !important;
+        }
+    }
+}

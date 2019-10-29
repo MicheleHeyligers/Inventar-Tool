@@ -1,0 +1,29 @@
+/* ----- Wizard CSS ----- */
+
+.jumbotron-wizard {
+    padding: 40px;
+    background-color: $bg-gray;
+    border-radius: 0;
+}
+
+.ibox-title-wizard {
+    h5 {
+        margin-bottom: 30px;
+    }
+}
+
+.wizard-title {
+    margin-bottom: 30px;
+}
+
+.wizard-sign-button {
+    a {
+        min-width: 120px !important;
+        min-height: 40px !important;
+        line-height: 35px !important;
+    }
+}
+
+.widget---content-text > h6 {
+    margin-bottom: 0;
+}

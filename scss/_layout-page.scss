@@ -1,0 +1,72 @@
+/* ----- Layout Container 1 ----- */
+
+.layout-example-block {
+    code {
+        background: none;
+        color: $text-color;
+    }
+}
+
+.layout-example-block {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .04);
+    border-radius: 2px;
+    background: rgba(0, 0, 0, .04);
+    color: $red-darken-4;
+}
+
+.layout-example-block-navbar {
+    background: $bg-default;
+}
+
+.layout-example-block-navbar {
+    code {
+        color: $white-color;
+    }
+}
+
+.layout-example-block-inner {
+    @include display-flex(flex);
+    @include justify-content-between;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 500px;
+}
+
+.layout-example-block-sidenav {
+    width: 24%;
+    background-color: $bg-default;
+}
+
+.layout-example-block-1 {
+    .layout-example-block-content {
+        width: 74%;
+    }
+}
+
+.layout-example-block-content {
+    code {
+        color: $white-color;
+    }
+
+}
+
+.layout-example-block-sidenav {
+    code {
+        color: $white-color;
+    }
+}
+
+.layout-example-block-content {
+    background-color: $bg-default;
+}
+
+/* ----- Layout Options ----- */
+
+.alert-warning {
+    border-color: $border-color;
+    background-color: $white-color;
+    color: $bg-gray;
+}

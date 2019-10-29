@@ -1,0 +1,165 @@
+/* ----- Notification ----- */
+
+.alert-dark-primary {
+    background-color: $bg-default;
+    color: $white-color;
+}
+
+.alert-dark-secondary {
+    background-color: $text-secondary;
+    color: $white-color;
+}
+
+.alert-dark-success {
+    background-color: $bg-success-color;
+    color: $white-color;
+}
+
+.alert-dark-danger {
+    background-color: $bg-danger-color;
+    color: $white-color;
+}
+
+.alert-dark-warning {
+    background-color: $bg-warning-color;
+    color: $bg-gray-2;
+}
+
+.alert-dark-info {
+    background-color: $bg-info-color;
+    color: $white-color;
+}
+
+.alert-dark-dark {
+    background-color: rgba(24, 28, 33, 0.9);
+    color: $white-color;
+}
+
+/* ----- Notification - 2 ----- */
+
+.notification-- {
+    position: relative;
+    width: 50em;
+    padding: 0 1em;
+    font-size: 0.8em;
+    line-height: 3.125;
+    color: white;
+    cursor: pointer;
+    background-color: #2b2b2b;
+    background-image: -webkit-linear-gradient(#2b2b2b, #262626);
+    background-image: linear-gradient(#2b2b2b, #262626);
+    height: 6em;
+
+    @media#{$breakpoint-xs} {
+        width: 25em;
+    }
+}
+
+.input-mini {
+    margin-right: 10px;
+}
+
+
+.notification-- {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+    span {
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: $red-darken-4;
+        background-image: -webkit-linear-gradient(tomato, #e02200);
+        background-image: linear-gradient(tomato, #e02200);
+    }
+
+    &.notify {
+        &::after {
+            content: '1';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 1.3333em;
+            width: 30px;
+            margin: 1.0833em 0;
+            border-radius: 50%;
+            font-size: 0.75em;
+            line-height: 31px;
+            text-align: center;
+            background-color:$red-darken-4;
+            box-shadow: 0 0 0 0.25em $red-darken-4;
+            animation: pulse 0.75s infinite;
+            height: 30px;
+            font-size: 16px;
+        }
+    }
+
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0.2em $red-darken-4;
+    }
+
+    25% {
+        box-shadow: 0 0 0 0.05em $red-darken-4;
+    }
+
+    50% {
+        box-shadow: 0 0 0 0.375em $red-darken-4;
+    }
+
+    75% {
+        box-shadow: 0 0 0 0.2em $red-darken-4;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0.3em $red-darken-4;
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0.2em $red-darken-4;
+    }
+
+    25% {
+        box-shadow: 0 0 0 0.05em $red-darken-4;
+    }
+
+    50% {
+        box-shadow: 0 0 0 0.375em $red-darken-4;
+    }
+
+    75% {
+        box-shadow: 0 0 0 0.2em $red-darken-4;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0.3em $red-darken-4;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0.2em $red-darken-4;
+    }
+
+    25% {
+        box-shadow: 0 0 0 0.05em $red-darken-4;
+    }
+
+    50% {
+        box-shadow: 0 0 0 0.375em $red-darken-4;
+    }
+
+    75% {
+        box-shadow: 0 0 0 0.2em $red-darken-4;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0.3em $red-darken-4;
+    }
+}

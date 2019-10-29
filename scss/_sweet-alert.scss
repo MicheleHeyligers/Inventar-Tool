@@ -1,0 +1,19 @@
+/* ----- Sweet Alert CSS ----- */
+
+.sweet-alert-content {
+    padding: 80px 40px;
+    margin-bottom: 50px;
+    border: 1px solid #eaeaea;
+    background-color: #fff !important;
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.sweet-alert-use-code {
+    border: 1px solid $border-color;
+    padding: 50px;
+    display: inline-block;
+    @include box-shadow(0 2px 120px rgba(0, 0, 0, .15));
+}

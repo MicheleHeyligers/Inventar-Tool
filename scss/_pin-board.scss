@@ -1,0 +1,84 @@
+/* ----- Pin Board CSS ----- */
+
+.notes-pin-board {
+    border-radius: 3px;
+    -webkit-transition: -webkit-transform 0.18s linear;
+    transition: -webkit-transform 0.18s linear;
+    -o-transition: transform 0.18s linear;
+    transition: transform 0.18s linear;
+    transition: transform 0.18s linear, -webkit-transform 0.18s linear;
+
+    .pin-board-content {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 30px;
+        -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.20);
+        box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.20);
+        position: relative;
+        -webkit-transition: -webkit-transform 0.18s linear;
+        transition: -webkit-transform 0.18s linear;
+        -o-transition: transform 0.18s linear;
+        transition: transform 0.18s linear;
+        transition: transform 0.18s linear, -webkit-transform 0.18s linear;
+        z-index: 1;
+
+        .pin-board-content {
+            small {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 10px;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.notes-pin-board {
+    h4 {
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+}
+
+.notes-pin-board {
+    .pin-board-content {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.notes-pin-board {
+    .pin-board-content {
+        a {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            color: inherit;
+        }
+    }
+}
+
+.notes-pin-board:hover,
+.notes-pin-board:focus {
+    @include transform(scale(1.05));
+    position: relative;
+    z-index: 5;
+}
+
+.pin-board-btn- {
+    margin-top: 10px;
+}
+
+.pin-board-btn- > a > i {
+    font-size: 16px;
+}
+
+.pin-board-content {
+    position: relative;
+    z-index: 1;
+}

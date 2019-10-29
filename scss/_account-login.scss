@@ -1,0 +1,338 @@
+/* ----- Account Login Area CSS -----  */
+.bubble-particlas {
+    position: absolute;
+    z-index: -1;
+}
+
+.overlay,
+.form-panel.one:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: $bg-opacity-8;
+    width: 100%;
+    height: 100%;
+}
+
+.account-form {
+    z-index: 15;
+    position: relative;
+    background: $white-color;
+    width: 600px;
+    border-radius: 4px;
+    @include box-shadow(0 0 30px rgba(0, 0, 0, 0.1));
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .form-toggle {
+        z-index: 10;
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        background-color: $white-color;
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: translate(0, -25%) scale(0);
+        transform: translate(0, -25%) scale(0);
+        opacity: 0;
+        cursor: pointer;
+        @include transition(all 0.3s ease);
+
+        &.visible {
+            -webkit-transform: translate(0, -25%) scale(1);
+            transform: translate(0, -25%) scale(1);
+            opacity: 1;
+        }
+
+        @media #{$breakpoint-xs} {
+            right: 10px;
+        }
+    }
+
+    @media #{$breakpoint-xs} {
+        width: 280px;
+    }
+
+    @media #{$breakpoint-xs-landscape} {
+        width: 500px;
+    }
+}
+
+.form-toggle:before,
+.form-toggle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 4px;
+    background: $bg-default;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.form-toggle:before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.form-toggle:after {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.form-content {
+    .form-group {
+        @include display-flex(flex);
+        @include flex-wrap(wrap);
+        @include justify-content-between;
+        margin: 0 0 20px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        label {
+            display: block;
+            margin: 0 0 10px;
+            color: $text-opacity-6;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+        }
+    }
+}
+
+.two {
+    .form-content {
+        .form-group {
+            label {
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.form-content {
+    .form-group {
+        input {
+            outline: none;
+            display: block;
+            background-color: $bg-opacity-1;
+            width: 100%;
+            border: 0;
+            border-radius: 4px;
+            box-sizing: border-box;
+            padding: 12px 20px;
+            color: $text-opacity-6;
+            font-size: inherit;
+            font-weight: 500;
+            line-height: inherit;
+            @include transition(0.3s ease);
+        }
+    }
+}
+
+.form-content {
+    .form-group {
+        input {
+            &:focus {
+                color: $text-opacity-6;
+            }
+        }
+    }
+}
+
+.two {
+    .form-content {
+        .form-group {
+            input {
+                color: $white-color;
+
+                &:focus {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+.form-content {
+    .form-group {
+        button {
+            outline: none;
+            background-color: $bg-default;
+            width: 100%;
+            border: 0;
+            border-radius: 4px;
+            padding: 12px 20px;
+            color: $white-color;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 500;
+            line-height: inherit;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+}
+
+.two {
+    .form-content {
+        .form-group {
+            button {
+                background-color: $white-color;
+                color: $bg-default;
+            }
+        }
+    }
+}
+
+.form-content {
+    .form-group {
+        .form-remember {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0;
+            text-transform: none;
+        }
+    }
+}
+
+.form-content {
+    .form-group {
+        .form-remember {
+            input[type='checkbox'] {
+                display: inline-block;
+                width: auto;
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+}
+
+.form-content {
+    .form-group {
+        .form-recovery {
+            color: $bg-default;
+            font-size: 12px;
+            text-decoration: none;
+        }
+    }
+}
+
+.form-panel {
+    padding: 60px calc(5% + 60px) 60px 60px;
+    box-sizing: border-box;
+}
+
+.form-panel {
+    &.one {
+        &:before {
+            content: '';
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.3s ease);
+        }
+
+        &hidden {
+            &:before {
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.form-panel {
+    &.two {
+        z-index: 5;
+        position: absolute;
+        top: 0;
+        left: 95%;
+        background-color: $bg-default;
+        width: 100%;
+        min-height: 100%;
+        padding: 60px calc(10% + 60px) 60px 60px;
+        @include transition(0.3s ease);
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 60px;
+            left: 1.5%;
+            background-color: $white-color;
+            height: 30px;
+            width: 2px;
+            @include transition(0.3s ease);
+        }
+
+        &:after {
+            left: 3%;
+        }
+
+        &:hover {
+            left: 93%;
+            @include box-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+        }
+
+        &.active {
+            left: 10%;
+            @include box-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+            cursor: default;
+
+            &:before,
+            &:after {
+                opacity: 0;
+            }
+        }
+
+        @media #{$breakpoint-xs} {
+            padding: 30px 40px;
+        }
+
+        @media #{$breakpoint-xs-landscape} {
+            padding: 30px 60px;
+        }
+    }
+}
+
+
+.form-header {
+    margin: 0 0 40px;
+
+    h1 {
+        padding: 4px 0;
+        color: $bg-default;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.two {
+    .form-header {
+        h1 {
+            position: relative;
+            z-index: 40;
+            color: $white-color;
+        }
+    }
+}
+
+.cp-fab {
+    background: $white-color !important;
+    color: $bg-default !important;
+}

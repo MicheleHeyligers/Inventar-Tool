@@ -1,0 +1,29 @@
+/* ----- Email View Area CSS ----- */
+
+.float-right {
+    &.tooltip-demo {
+        &.email-view {
+            a {
+                padding: 3px 15px !important;
+
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+.mail-body {
+    &.text-right {
+        &.tooltip-demo {
+            &.email-view {
+                a {
+                    padding: 5px 15px !important;
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}

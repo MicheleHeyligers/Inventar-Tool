@@ -1,0 +1,239 @@
+/* ----- Product Item ----- */
+.product-thumb {
+    height: auto;
+    width: 180px;
+    border: 1px solid $border-color;
+    padding: 15px 5px;
+
+    @media#{$breakpoint-xs} {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    @media#{$breakpoint-xs-landscape} {
+        height: auto !important;
+        width: 100px !important;
+    }
+}
+
+.item-over-view-text {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.product--item-btn {
+    a {
+        width: 75px !important;
+        height: 25px !important;
+        display: inline-block;
+        border-radius: 20px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+
+/* ----- Product List ----- */
+
+.product-list-btn- {
+    a {
+        height: 34px;
+        width: 70px;
+        display: inline-block;
+        line-height: 34px;
+        padding: 0 !important;
+
+        @media#{$breakpoint-xs} {
+            margin-right: 0px !important;
+            margin-bottom: 15px !important;
+        }
+
+        @media#{$breakpoint-xs-landscape} {
+            margin-bottom: 0 !important;
+        }
+
+        @media#{$breakpoint-sm} {
+            margin-bottom: 15px !important;
+        }
+    }
+}
+
+.table {
+    thead {
+        th {
+            vertical-align: middle;
+        }
+    }
+}
+
+.product-list-btn- {
+    a {
+        &:last-child {
+            @media#{$breakpoint-xs} {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        &:first-child {
+            @media#{$breakpoint-xs} {
+                margin-right: 0px !important;
+                margin-bottom: 15px !important;
+            }
+
+            @media#{$breakpoint-xs-landscape} {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}
+
+.product-en-btn {
+    a {
+        width: 55px !important;
+        height: 20px !important;
+        padding: 0 5px;
+        display: inline-block !important;
+        line-height: 20px;
+        font-size: 10px;
+        border-radius: 12px;
+    }
+}
+
+/* ----- Shop Page Area CSS ----- */
+
+.shop-product-content {
+    background-color: $white-color;
+    padding: 15px;
+}
+
+.shop-product--text {
+    @include align-items-center;
+    @include justify-content-between;
+    padding: 20px 30px;
+}
+
+.shop--img {
+    width: 200px;
+    margin: auto;
+}
+
+.shop--item-Rate {
+    h6 {
+        color: $text-color;
+        font-size: 12px;
+        text-decoration: line-through;
+    }
+}
+
+.shop--item-desc {
+    h6 {
+        color: $text-color;
+        font-size: 13px;
+    }
+}
+
+.shop--item-Rate > span,
+.shop--item-desc > span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.add-to-cart {
+    padding-top: 10px;
+}
+
+.btn-round {
+    &.btn-primary {
+        &.shop {
+            font-size: 12px;
+        }
+    }
+}
+
+.shop--img {
+    @include transition(1000ms);
+}
+
+.shop-product-content {
+    &:hover {
+        .shop--img {
+            @include transform(rotate(8deg));
+        }
+    }
+}
+
+.add-to-cart {
+    a {
+        height: 35px !important;
+        min-width: 100px !important;
+        padding: 0 !important;
+        line-height: 35px !important;
+        display: inline-block !important;
+        font-size: 12px !important;
+    }
+}
+
+/* ----- Order List ----- */
+
+.table {
+    border: 1px solid $border-color;
+}
+
+.table td,
+.table th {
+    cursor: pointer;
+}
+
+.input-group {
+    &.date {
+        display: flex;
+        @include display-flex(flex);
+        @include align-items-center;
+        flex-wrap: nowrap;
+    }
+}
+
+.order-list-btn- {
+    a {
+        height: 33px;
+        width: 70px;
+        display: inline-block;
+        line-height: 33px;
+        padding: 0 !important;
+
+        @media#{$breakpoint-xs} {
+            margin-bottom: 15px;
+        }
+
+        @media#{$breakpoint-xs-landscape} {
+            margin-bottom: 0;
+        }
+
+        @media#{$breakpoint-sm} {
+            margin-bottom: 15px;
+        }
+
+        @media#{$breakpoint-md} {
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            @media#{$breakpoint-xs} {
+                margin-bottom: 0;
+            }
+
+            @media#{$breakpoint-md} {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* ----- Product Item ----- */
+
+.nav-item.product--item--button > a {
+	background-color: transparent !important;
+	color: #555 !important;
+	border: 1px solid #ebebeb !important;
+}

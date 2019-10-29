@@ -1,0 +1,32 @@
+/* ----- File Manager CSS ----- */
+
+.file-manager-content {
+    border: 1px solid $border-color;
+    padding: 0;
+    background-color: $white-color;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.file-manager {
+    h5 {
+        font-size: 15px;
+    }
+}
+
+.file-control {
+    color: $text-color;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.folder-list {
+    li {
+        a {
+            i {
+                width: 15px;
+            }
+        }
+    }
+}

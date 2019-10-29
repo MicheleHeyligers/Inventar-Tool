@@ -1,0 +1,775 @@
+.main-wrapper {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    padding-top: 70px;
+    background-color: $bg-gray;
+}
+
+.page-wrapper {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+
+    .left-sidebar-area {
+        position: relative;
+        @include flex(0 0 240px);
+        max-width: 240px;
+        width: 240px;
+        min-height: 100vh;
+        @include box-shadow(0 1px 15px 1px rgba(70, 70, 78, 0.15));
+
+        &::after {
+            content: '';
+            background-color: #0c0c0c;
+            position: absolute;
+            width: 100%;
+            height: 70px;
+            bottom: -70px;
+            left: 0;
+            right: 0;
+            z-index: 99;
+        }
+
+        @media #{$breakpoint-lg} {
+            @include flex(0 0 0);
+            max-width: 0;
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+
+        @media #{$breakpoint-md} {
+            @include flex(0 0 0);
+            max-width: 0;
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 0);
+            max-width: 0;
+            width: 0;
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+    }
+
+    .page-content {
+        position: relative;
+        z-index: 2;
+        @include flex(0 0 calc(100% - 240px));
+        max-width: calc(100% - 240px);
+        width: calc(100% - 240px);
+        background-color: #a0bfc7;
+        min-height: 100vh;
+        padding: 0 15px;
+
+        @media #{$breakpoint-lg} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @media #{$breakpoint-md} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+        }
+
+        @media #{$breakpoint-xs} {
+            @include flex(0 0 100%);
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.settings-panel {
+    position: fixed;
+    top: 0;
+    right: -430px;
+    width: 400px;
+    background-color: $white-color;
+    z-index: 99999;
+    height: 100%;
+    @include box-shadow(0 0 30px 15px rgba(70, 70, 78, 0.2));
+    @include transition(300ms);
+    padding: 30px 15px;
+
+    @media #{$breakpoint-xs} {
+        width: 270px;
+        right: -270px;
+    }
+
+    .setting-title {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $border-color;
+    }
+
+    #settingsPanel {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .settings-on-off {
+        position: absolute;
+        bottom: 80px;
+        width: 40px;
+        height: 40px;
+        background-color: $bg-default;
+        color: $white-color;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        z-index: 1000;
+        left: -120px;
+        border-radius: 50%;
+        cursor: pointer;
+        @include box-shadow(0 1px 15px 5px rgba(70, 70, 78, 0.1));
+
+        @media #{$breakpoint-xs} {
+            bottom: 30px;
+            left: -50px;
+        }
+    }
+
+    &.settings-active {
+        right: 0;
+    }
+}
+
+.matmin-footer {
+    background-color: $white-color;
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding-left: 255px;
+    padding-right: 15px;
+
+    @media #{$breakpoint-lg} {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
+    @media #{$breakpoint-md} {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+
+    @media #{$breakpoint-xs} {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Menu Collapsed */
+.menu-collapsed {
+    .page-wrapper {
+        .left-sidebar-area {
+            @include flex(0 0 50px);
+            max-width: 50px;
+            width: 50px;
+            opacity: 1;
+            visibility: visible;
+            display: block;
+        }
+
+        .page-content {
+            @include flex(0 0 calc(100% - 50px));
+            max-width: calc(100% - 50px);
+            width: calc(100% - 50px);
+        }
+    }
+
+    .matmin-footer {
+        padding-left: 65px;
+
+        @media #{$breakpoint-xs} {
+            padding-left: 45px;
+        }
+    }
+
+    .matmin-header-area .logo-and-trigger-area {
+        width: 50px;
+        padding: 0 10px;
+
+        .logo-area {
+            display: none;
+        }
+    }
+}
+
+/* Settings Options CSS */
+
+.layouts-options {
+    position: relative;
+    z-index: 1;
+
+    .layout-change {
+        li {
+            @include flex(0 0 50px);
+            max-width: 50px;
+            width: 50px;
+            border: 4px solid $border-color;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            transition-duration: 500ms;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                border-color: $bg-default;
+            }
+        }
+    }
+}
+
+.template-mode {
+    position: relative;
+    z-index: 1;
+
+    .template-mode-nav {
+        li {
+            @include flex(0 0 50px);
+            max-width: 50px;
+            width: 50px;
+            border: 4px solid $border-color;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            transition-duration: 500ms;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                border-color: $bg-default;
+            }
+        }
+    }
+}
+
+.topbar--color {
+    position: relative;
+    z-index: 1;
+
+    .topbar--color-nav {
+        li {
+            @include flex(0 0 30px);
+            max-width: 30px;
+            width: 30px;
+            height: 30px;
+            border: 4px solid $border-color;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            transition-duration: 300ms;
+            border-radius: 50%;
+
+            @media #{$breakpoint-xs} {
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                border-color: $bg-default;
+            }
+
+            &.primary-color {
+                background-color: $bg-default;
+            }
+
+            &.success-color {
+                background-color: $bg-success-color;
+            }
+
+            &.info-color {
+                background-color: $bg-info-color;
+            }
+
+            &.warning-color {
+                background-color: $bg-warning-color;
+            }
+
+            &.danger-color {
+                background-color: $bg-danger-color;
+            }
+
+            &.red-darken-1 {
+                background-color: $red-darken-1;
+            }
+
+            &.red-darken-4 {
+                background-color: $red-darken-4;
+            }
+
+            &.red-accent-2 {
+                background-color: $red-accent-2;
+            }
+
+            &.pink-lighten-3 {
+                background-color: $pink-lighten-3;
+            }
+
+            &.pink-lighten-1 {
+                background-color: $pink-lighten-1;
+            }
+
+            &.pink-darken-4 {
+                background-color: $pink-darken-4;
+            }
+
+            &.purple-darken-4 {
+                background-color: $purple-darken-4;
+            }
+
+            &.purple-accent-3 {
+                background-color: $purple-accent-3;
+            }
+
+            &.dark-2 {
+                background-color: $dark-2;
+            }
+
+            &.dark-3 {
+                background-color: $dark-3;
+            }
+        }
+    }
+}
+
+.left--sidebar--color {
+    position: relative;
+    z-index: 1;
+
+    .left-sidebar--color-nav {
+        li {
+            @include flex(0 0 30px);
+            max-width: 30px;
+            width: 30px;
+            height: 30px;
+            border: 4px solid $border-color;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            transition-duration: 300ms;
+            border-radius: 50%;
+
+            @media #{$breakpoint-xs} {
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                border-color: $bg-default;
+            }
+
+            &.primary-color {
+                background-color: $bg-default;
+            }
+
+            &.success-color {
+                background-color: $bg-success-color;
+            }
+
+            &.info-color {
+                background-color: $bg-info-color;
+            }
+
+            &.warning-color {
+                background-color: $bg-warning-color;
+            }
+
+            &.danger-color {
+                background-color: $bg-danger-color;
+            }
+
+            &.red-darken-1 {
+                background-color: $red-darken-1;
+            }
+
+            &.red-darken-4 {
+                background-color: $red-darken-4;
+            }
+
+            &.red-accent-2 {
+                background-color: $red-accent-2;
+            }
+
+            &.pink-lighten-3 {
+                background-color: $pink-lighten-3;
+            }
+
+            &.pink-lighten-1 {
+                background-color: $pink-lighten-1;
+            }
+
+            &.pink-darken-4 {
+                background-color: $pink-darken-4;
+            }
+
+            &.purple-darken-4 {
+                background-color: $purple-darken-4;
+            }
+
+            &.purple-accent-3 {
+                background-color: $purple-accent-3;
+            }
+
+            &.dark-2 {
+                background-color: $dark-2;
+            }
+
+            &.dark-3 {
+                background-color: $dark-3;
+            }
+        }
+    }
+}
+
+.box-layout-bodyimg {
+    position: relative;
+    z-index: 1;
+
+    p {
+        span {
+            font-size: 11px;
+            line-height: 1.5;
+        }
+    }
+
+    .box-layout-bodyimg-nav {
+        li {
+            @include flex(0 0 40px);
+            max-width: 40px;
+            width: 40px;
+            height: 40px;
+            border: 4px solid $border-color;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            transition-duration: 500ms;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                border-color: $bg-default;
+            }
+
+            @media #{$breakpoint-xs} {
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.nav_bar_bodyimg {
+    position: relative;
+    z-index: 1;
+
+    .nav_bar_bodyimg_nav {
+        li {
+            @include flex(0 0 70px);
+            max-width: 70px;
+            width: 70px;
+            height: 100px;
+            border: 4px solid $border-color;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center center;
+            transition-duration: 500ms;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                border-color: $bg-default;
+            }
+
+            @media #{$breakpoint-xs} {
+                margin-right: 5px;
+                margin-bottom: 5px;
+                @include flex(0 0 60px);
+                max-width: 60px;
+                width: 60px;
+                height: 80px;
+            }
+        }
+    }
+}
+
+/* Top Bar Color CSS */
+
+.top-bar-primary-color,
+.top-bar-success-color,
+.top-bar-info-color,
+.top-bar-warning-color,
+.top-bar-danger-color,
+.top-bar-red-darken-1,
+.top-bar-red-darken-4,
+.top-bar-red-accent-2,
+.top-bar-pink-lighten-3,
+.top-bar-pink-lighten-1,
+.top-bar-pink-darken-4,
+.top-bar-purple-darken-4,
+.top-bar-purple-accent-3,
+.top-bar-dark-2,
+.top-bar-dark-3 {
+    .matmin-header-area {
+
+        .full-screen-mode > a,
+        .top-left-side-nav .dropdown .btn,
+        .top-bar-nav .dropdown .btn {
+            color: $white-opacity-7;
+        }
+
+        .top-left-side-nav .dropdown .btn:hover,
+        .top-left-side-nav .dropdown .btn:focus,
+        .top-bar-nav .dropdown .btn:hover,
+        .top-bar-nav .dropdown .btn:focus {
+            color: $white-color !important;
+        }
+    }
+}
+
+.top-bar-primary-color {
+    .matmin-header-area {
+        background-color: $bg-default;
+    }
+}
+
+.top-bar-success-color {
+    .matmin-header-area {
+        background-color: $bg-success-color;
+    }
+}
+
+.top-bar-info-color {
+    .matmin-header-area {
+        background-color: $bg-info-color;
+    }
+}
+
+.top-bar-warning-color {
+    .matmin-header-area {
+        background-color: $bg-warning-color;
+    }
+}
+
+.top-bar-danger-color {
+    .matmin-header-area {
+        background-color: $bg-danger-color;
+    }
+}
+
+.top-bar-red-darken-1 {
+    .matmin-header-area {
+        background-color: $red-darken-1;
+    }
+}
+
+.top-bar-red-darken-4 {
+    .matmin-header-area {
+        background-color: $red-darken-4;
+    }
+}
+
+.top-bar-red-accent-2 {
+    .matmin-header-area {
+        background-color: $red-accent-2;
+    }
+}
+
+.top-bar-pink-lighten-3 {
+    .matmin-header-area {
+        background-color: $pink-lighten-3;
+    }
+}
+
+.top-bar-pink-lighten-1 {
+    .matmin-header-area {
+        background-color: $pink-lighten-1;
+    }
+}
+
+.top-bar-pink-darken-4 {
+    .matmin-header-area {
+        background-color: $pink-darken-4;
+    }
+}
+
+.top-bar-purple-darken-4 {
+    .matmin-header-area {
+        background-color: $purple-darken-4;
+    }
+}
+
+.top-bar-purple-accent-3 {
+    .matmin-header-area {
+        background-color: $purple-accent-3;
+    }
+}
+
+.top-bar-dark-2 {
+    .matmin-header-area {
+        background-color: $dark-2;
+    }
+}
+
+.top-bar-dark-3 {
+    .matmin-header-area {
+        background-color: $dark-3;
+    }
+}
+
+/* Boxed Layout CSS */
+
+.boxed-layout {
+    position: relative;
+    z-index: 1;
+    background-image: url(img/core-img/p5.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    .matmin-header-area {
+        width: 1140px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media #{$breakpoint-lg} {
+            width: 960px;
+        }
+
+        @media #{$breakpoint-md} {
+            width: 740px;
+        }
+
+        @media #{$breakpoint-xs} {
+            width: 310px;
+        }
+
+        @media #{$breakpoint-xs-landscape} {
+            width: 420px;
+        }
+
+        @media #{$breakpoint-sm} {
+            width: 540px;
+        }
+    }
+
+    .main-wrapper {
+        width: 1140px;
+        margin: 0 auto;
+
+        @media #{$breakpoint-lg} {
+            width: 960px;
+        }
+
+        @media #{$breakpoint-md} {
+            width: 740px;
+        }
+
+        @media #{$breakpoint-xs} {
+            width: 310px;
+        }
+
+        @media #{$breakpoint-xs-landscape} {
+            width: 420px;
+        }
+
+        @media #{$breakpoint-sm} {
+            width: 540px;
+        }
+    }
+}
+
+.bg-pattern-1,
+.bg-pattern-2,
+.bg-pattern-3,
+.bg-pattern-4,
+.bg-pattern-5,
+.bg-pattern-6,
+.bg-pattern-7,
+.bg-pattern-8,
+.bg-pattern-9,
+.bg-pattern-10,
+.bg-pattern-11,
+.bg-pattern-12 {
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.bg-pattern-1 {
+    background-image: url(img/core-img/p1.png);
+}
+
+.bg-pattern-2 {
+    background-image: url(img/core-img/p2.png);
+}
+
+.bg-pattern-3 {
+    background-image: url(img/core-img/p3.png);
+}
+
+.bg-pattern-4 {
+    background-image: url(img/core-img/p4.png);
+}
+
+.bg-pattern-5 {
+    background-image: url(img/core-img/p5.png);
+}
+
+.bg-pattern-6 {
+    background-image: url(img/core-img/p6.png);
+}
+
+.bg-pattern-7 {
+    background-image: url(img/core-img/p7.png);
+}
+
+.bg-pattern-8 {
+    background-image: url(img/core-img/p8.png);
+}
+
+.bg-pattern-9 {
+    background-image: url(img/core-img/p9.png);
+}
+
+.bg-pattern-10 {
+    background-image: url(img/core-img/p10.png);
+}
+
+.bg-pattern-11 {
+    background-image: url(img/core-img/p11.png);
+}
+
+.bg-pattern-12 {
+    background-image: url(img/core-img/p12.png);
+}

@@ -1,0 +1,123 @@
+/* ----- Portfolio CSS ----- */
+
+.portfolio-thumb_content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+
+    .portfo-image-hover-effect {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            right: 0;
+            opacity: 1;
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+            opacity: .7;
+            left: 0;
+        }
+    }
+}
+
+.portfo-image-hover-effect::before,
+.portfo-image-hover-effect::after {
+    content: "";
+    background-color: rgba(136, 14, 79, 0.75);
+    height: 0;
+    width: 0;
+    z-index: 1;
+    position: absolute;
+    -webkit-transition-duration: 0.9s;
+    -o-transition-duration: 0.9s;
+    transition-duration: 0.9s;
+    top: 0;
+    left: 0;
+}
+
+.portfo-image-hover-effect:hover::after,
+.portfo-image-hover-effect:hover::before {
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+}
+
+.portfo-image-hover-effect:hover::after,
+.portfo-image-hover-effect:hover::before {
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+}
+
+
+.portfolio_gallery_iteam {
+    padding: 5px;
+    background-color: $white-color;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .single_content {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: -400px;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bg-opacity-default-5;
+        padding: 0;
+        color: $white-color;
+        @include transition(all ease 0.5s);
+        -webkit-backface-visibility: hidden;
+
+        .project_title {
+            padding: 0 30px;
+
+            a {
+                color: $white-color;
+                font-size: 12px;
+
+                h5 {
+                    color: $white-color;
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            background-color: rgba(136, 14, 79, 0.75);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -500px;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            @include transition(all ease 1s);
+            -webkit-backface-visibility: hidden;
+        }
+    }
+
+    &:hover {
+        .single_content {
+            top: 0;
+        }
+    }
+
+    &:hover {
+        .single_content &::before {
+            top: 0;
+        }
+    }
+}

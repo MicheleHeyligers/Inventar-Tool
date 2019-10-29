@@ -1,0 +1,37 @@
+/* ----- Counters Area CSS ----- */
+
+#count-down {
+    margin: 20px 0;
+
+    .clock-presenter {
+        height: 80px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+.center-block {
+    margin-right: auto;
+    margin-left: auto;
+    float: inherit !important;
+}
+
+.wrappe-counter {
+    width: 100%;
+    height: 325px;
+    background-color: $bg-default;
+}
+
+
+#timer-countinbetween {
+    font-size: 26px;
+    color: $bg-default;
+}
+
+#timer-countercallback {
+    font-size: 16px;
+}
+
+#timer-outputpattern {
+    font-size: 16px;
+}

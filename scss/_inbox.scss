@@ -1,0 +1,431 @@
+/* ----- Inbox CSS ----- */
+
+.mailbox-content {
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.form-control {
+    &.inbox- {
+        margin-bottom: 0;
+        padding: 8px;
+    }
+}
+
+.mail-ontact {
+    padding: 5px !important;
+}
+
+.file-manager {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.space-25 {
+    margin: 25px 0;
+    display: block;
+}
+
+.folder-list {
+    li {
+        border-bottom: 1px dotted #ced4da;
+        display: block;
+
+        a {
+            color: $text-color;
+            display: block;
+            padding: 10px 0;
+            font-size: 13px;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+
+            &:hover {
+                color: $bg-default;
+            }
+        }
+    }
+
+}
+
+.category-list {
+    li {
+        border-bottom: 1px dotted #ced4da;
+        display: block;
+
+        a {
+            color: $text-color;
+            display: block;
+            padding: 8px 0;
+            font-size: 13px;
+            -webkit-transition-duration: 500ms;
+            -o-transition-duration: 500ms;
+            transition-duration: 500ms;
+
+            &:hover {
+                color: $bg-default;
+            }
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.mail-box-header {
+    background-color: $white-color;
+    border: 1px solid $border-color;
+    border-bottom: 0;
+    padding: 30px;
+}
+
+.btn-white {
+    color: $text-color;
+    background: $white-color;
+    border: 1px solid $border-color;
+    font-size: 11px;
+}
+
+.mail-subject {
+    a {
+        font-size: 13px;
+        color: $text-color;
+        font-weight: 500;
+    }
+
+}
+
+.mail-ontact {
+    a {
+        color: $text-color;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+}
+
+.inbox-title {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.inbox-title {
+    h2 {
+        span {
+            font-size: 16px;
+            color: $bg-default;
+        }
+    }
+
+}
+
+.label-danger {
+    background-color: $red-darken-4;
+    color: $white-color;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.label-warning {
+    background-color: $bg-warning-color;
+    color: $white-color;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.label-info {
+    background-color: $text-secondary;
+    color: $white-color;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.label-primary {
+    background-color: $bg-default;
+    color: $white-color;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.mail- {
+    border-top: 1px solid $border-color;
+    padding: 20px;
+    background-color: $white-color;
+}
+
+.message-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.mail-tools {
+    &.tooltip-demo {
+        h3 {
+            font-size: 13px;
+            color: $text-color;
+            font-weight: 400;
+        }
+    }
+}
+
+.mail-add-title {
+    font-size: 12px;
+    color: $text-color;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.mail- {
+    p {
+        font-size: 13px;
+    }
+}
+
+.mail-attachment {
+    background-color: $white-color;
+    border-top: 1px solid $border-color;
+    padding: 20px 0;
+}
+
+.file-box {
+    float: left;
+    width: 220px;
+}
+
+.file {
+    .icon {
+        padding: 37px 10px;
+        text-align: center;
+    }
+
+}
+
+.file {
+    .icon {
+        i {
+            font-size: 70px;
+            color: $bg-gray;
+        }
+    }
+}
+
+.file {
+    border: 1px solid $border-color;
+    padding: 0;
+    background-color: $white-color;
+    position: relative;
+    margin-bottom: 30px;
+    display: block;
+
+    .file-name {
+        padding: 10px;
+        background-color: $bg-gray;
+        border-top: 1px solid $border-color;
+
+        .h6 {
+            font-size: 12px;
+            color: $text-color;
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.mail-attachment {
+    p {
+        font-size: 14px;
+    }
+
+}
+
+.summernote {
+    padding: 20px;
+
+    p {
+        font-size: 12px;
+    }
+}
+
+.mail-box-header {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.label.label-warning.inbox,
+.label.label-info.inbox,
+.label.label-danger.inbox,
+.label.label-warning.inbox {
+    padding: 1px 7px;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.unread {
+    td {
+        padding-right: 0;
+    }
+}
+
+.mail-btn-group {
+    a {
+        color: $white-color !important;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+.mail-btn-group {
+    a {
+        i {
+            font-size: 15px;
+        }
+    }
+}
+
+.search-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 300px;
+}
+
+.search-wrapper form button {
+    font-size: 18px;
+    cursor: pointer;
+    color: #7b1fa2;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 9999999;
+}
+
+.mail-body {
+    p {
+        font-weight: 300;
+    }
+}
+
+.mail-btn-group {
+    a {
+        padding: 6px 15px !important;
+    }
+}
+
+.mail-pager {
+    a {
+        padding: 0 15px !important;
+    }
+}
+
+.admi-mail-checkbox {
+    margin-right: 5px;
+}
+
+.admi-mail-body {
+    cursor: pointer;
+}
+
+.admi-mail-item {
+    padding: 10px 15px;
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
+    background-color: #fcfcfc;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.admi-mail-star {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #fdb901;
+}
+
+.ad-img-user {
+    margin-right: 15px;
+}
+
+.ad-img-user {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+
+.ad-img-user > img {
+    border-radius: 50%;
+}
+
+.admi-mail-subject span {
+    font-size: 13px;
+    color: #70737c;
+}
+
+.admi-mail-date {
+    font-size: 12px;
+    color: #969dab;
+    margin-left: 15px;
+}
+
+.admi-mail-attachment {
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.admi-mail-from {
+    font-size: 13px;
+    color: #555;
+}
+
+.mail-subject--text-- {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #111 !important;
+}
+
+.admi-mail-list {
+    border-left: 1px solid #ebebeb;
+}
+
+.form-control.inbox-mail {
+    width: 300px;
+    border: 1px solid #ebebeb;
+    padding: 0 15px;
+    border-radius: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-control.inbox-mail:focus {
+    border-color: $bg-default !important;
+    box-shadow: none !important;
+}
+
+.search-results {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 999;
+}
+
+.search-results > i {
+    line-height: 0.7;
+}
+
+.mail-tools.tooltip-demo {
+    flex-wrap: wrap;
+}
+
+.mail-pager i {
+    font-size: 16px;
+}

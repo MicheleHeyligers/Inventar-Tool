@@ -1,0 +1,15 @@
+/* ----- Loaders CSS ----- */
+
+.ap-primary.ap-rotating,
+.ap-primary.ap-double-bounce .ap-child,
+.ap-primary.ap-wave .ap-rect,
+.ap-primary.ap-wandering-cubes .ap-cube,
+.ap-primary.ap-spinner-pulse,
+.ap-primary.ap-chasing-dots .ap-child,
+.ap-primary.ap-three-bounce .ap-child,
+.ap-primary.ap-circle .ap-child::before,
+.ap-primary.ap-cube-grid .ap-cube,
+.ap-primary.ap-fading-circle .ap-circle::before,
+.ap-primary.ap-folding-cube .ap-cube::before {
+    background-color: $bg-default;
+}

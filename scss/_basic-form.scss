@@ -1,0 +1,153 @@
+/* ----- Basic Form CSS ----- */
+
+.custom-file-label::after {
+    color: $white-color;
+    background-color: $bg-default;
+}
+
+.form-row > .col,
+.form-row > [class*="col-"] {
+    padding-left: 0;
+}
+
+.basic-form.text--area {
+    padding-left: 15px;
+}
+
+.form-control.basic-form.text--area {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.ibox-content {
+    p {
+        display: inline-block !important;
+        margin-right: 20px !important;
+    }
+}
+
+.table-dark {
+    background-color: $bg-secondary !important;
+}
+
+.table {
+    .thead-dark {
+        th {
+            background-color: $bg-default !important;
+            border-color: $white-color !important;
+        }
+    }
+}
+
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+    border-color: $white-color !important;
+}
+
+.file-up-btn {
+    a {
+        height: 40px !important;
+        width: 100px !important;
+        padding: 0 !important;
+        line-height: 40px !important;
+    }
+
+}
+
+
+// Linear Gradient Mixin
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+    background-color: $from;
+    background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+    background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+    background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+    background: -ms-linear-gradient(left, $from 0%, $to $stop);
+    background: linear-gradient(to right, $from 0%, $to $stop);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to', GradientType=1);
+}
+
+
+// Basic form styling
+
+.form-control.basic-form:hover,
+.form-control.basic-form:focus {
+    box-shadow: none !important;
+}
+
+.form-group {
+    position: relative;
+    padding-top: $grid-gutter-width / 2;
+    margin-bottom: $grid-gutter-width;
+}
+
+.form-control {
+    border-radius: 0;
+    padding: $grid-gutter-width / 3 $input-padding-horizontal;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    font-size: 0.9rem;
+
+    + label {
+        position: absolute;
+        z-index: 1;
+        top: $input-padding-vertical + $grid-gutter-width / 2;
+        margin: 0;
+        transition: all 0.2s ease-in-out;
+        pointer-events: none;
+        left: 0;
+        right: $input-padding-horizontal;
+    }
+
+    &:focus {
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    &:focus {
+        + label {
+            color: $colour-primary;
+        }
+    }
+
+    &:focus,
+    &.has-value {
+
+        + label {
+            font-size: 0.75rem;
+            top: 0;
+        }
+
+    }
+
+}
+
+.no-js {
+    .form-control + label {
+        font-size: 0.75rem;
+        top: 0;
+    }
+}
+
+select {
+    display: none;
+}
+
+.form-control:focus {
+    ~ .line {
+        &:after {
+            transform: scaleX(1);
+        }
+    }
+}
+
+// Remove Bootstrap 4 height from select
+select.form-control:not([size]):not([multiple]) {
+    height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

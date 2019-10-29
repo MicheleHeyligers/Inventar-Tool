@@ -1,0 +1,439 @@
+/* ----- Shortcodes ----- */
+
+.ibox-home {
+    clear: both;
+    min-height: 100%;
+    @include transition-duration(500ms);
+}
+
+.full-height-card {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: stretch;
+    justify-content: stretch;
+}
+
+.collapsed-box.ibox-home {
+    min-height: auto;
+    @include transition-duration(500ms);
+}
+
+.ad-img-user {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+
+.wrapper.wrapper-content {
+    margin-top: 30px;
+}
+
+.pr-30 {
+    padding-right: 30px !important;
+}
+
+.pt-100 {
+    padding-top: 100px !important;
+}
+
+.pt-30 {
+    padding-top: 30px !important;
+}
+
+.px-30 {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.pd-50 {
+    padding: 50px !important;
+}
+
+.pd-100 {
+    padding: 100px !important;
+}
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.matmin-table {
+    display: table;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.padding-left {
+    padding-left: 30px !important;
+}
+
+.matmin-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.card {
+    background-color: $bg-white-1;
+    border-radius: 3px;
+    border: none;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 1;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    border-color: transparent;
+}
+
+.border-top {
+    border-top: 1px solid #ebebeb !important;
+}
+
+.bg-boxshadow-2 {
+    background-color: $white-color;
+    padding: 0;
+    @include box-shadow(0 20px 25px -12px rgba(0, 0, 0, 0.09));
+    display: block;
+}
+
+.font-color-purple {
+    color: $bg-default !important;
+}
+
+.font-color-white {
+    color: $white-color !important;
+}
+
+.bg-color-purple {
+    background-color: $bg-default !important;
+}
+
+.bg-primary {
+    background-color: $bg-default !important;
+}
+
+.bg-secondary {
+    background-color: $bg-secondary !important;
+}
+
+.bg-success {
+    background-color: $bg-success-color !important;
+}
+
+.bg-info {
+    background-color: $bg-info-color !important;
+}
+
+.red-dark-2 {
+    background-color: #b71c1c !important;
+}
+
+.bg-warning {
+    background-color: $bg-warning-color !important;
+}
+
+.bg-danger {
+    background-color: $bg-danger-color !important;
+}
+
+.bg-gradient-primary {
+    background: -webkit-gradient(linear, left top, right top, from($bg-default), to(#32cafe)) !important;
+}
+
+.bg-gradient-info {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $bg-info-color), to(#69c7de)) !important;
+    background-image: -webkit-linear-gradient(left, $bg-info-color 0, #69c7de 100%) !important;
+    background-image: -o-linear-gradient(left, $bg-info-color 0, #69c7de 100%) !important;
+    background-image: linear-gradient(to right, $bg-info-color 0, #69c7de 100%) !important;
+}
+
+.bg-gradient-danger {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $bg-danger-color), to(#fc9197)) !important;
+    background-image: -webkit-linear-gradient(left, $bg-danger-color 0, #fc9197 100%) !important;
+    background-image: -o-linear-gradient(left, $bg-danger-color 0, #fc9197 100%) !important;
+    background-image: linear-gradient(to right, $bg-danger-color 0, #fc9197 100%) !important;
+}
+
+.primary-color {
+    color: $bg-default !important;
+}
+
+.read-color {
+    color: $red-darken-4 !important;
+}
+
+.color-primary {
+    color: $bg-default !important;
+}
+
+.color-secondary {
+    color: $bg-secondary !important;
+}
+
+.color-success {
+    color: $bg-success-color !important;
+}
+
+.color-info {
+    color: $bg-info-color !important;
+}
+
+.color-warning {
+    color: $bg-warning-color !important;
+}
+
+.color-danger {
+    color: $bg-danger-color !important;
+}
+
+.font-size-14 {
+    font-size: 14px !important;
+}
+
+.font-size-12 {
+    font-size: 12px !important;
+}
+
+.border-1px {
+    border: 1px solid $border-color !important;
+}
+
+.background-color-white {
+    background-color: $white-color !important;
+}
+
+.margin-bottom-o {
+    margin-bottom: 0 !important;
+}
+
+.m-t-n {
+    margin-top: -15px;
+}
+
+.zoom-effect {
+    @include transition(1s);
+}
+
+.zoom-effect:hover {
+    @include transform(scale(1.05));
+}
+
+.white-font {
+    color: $white-color !important;
+}
+
+.dropdown-item {
+    font-size: 13px;
+}
+
+.btn-group-sm > .btn,
+.btn-sm {
+    font-size: .8rem;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.btn-light {
+    color: $heading-color !important;
+    background-color: none;
+    border-color: none;
+}
+
+.font--weigth-300 {
+    font-weight: 300 !important;
+}
+
+.font-s--14 {
+    font-size: 14px !important;
+}
+
+.font-s--15 {
+    font-size: 15px !important;
+}
+
+.mr--5 {
+    margin-right: 5px !important;
+}
+
+.p-30 {
+    padding: 30px !important;
+}
+
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+
+.font-size-36 {
+    font-size: 36px !important;
+}
+
+.font-size-30 {
+    font-size: 30px !important;
+}
+
+.font-size-22 {
+    font-size: 22px !important;
+}
+
+.font-size-24 {
+    font-size: 24px !important;
+}
+
+.font-size-18 {
+    font-size: 18px !important;
+}
+
+.font-size-16 {
+    font-size: 16px !important;
+}
+
+.font-size-15 {
+    font-size: 15px !important;
+}
+
+.ui-w-40 {
+    width: 40px !important;
+    height: auto;
+}
+
+.bg-purple {
+    background-color: #9a69cb !important;
+}
+
+.bg-secondary {
+    color: #26a69a;
+}
+
+.pink-darken-4 {
+    background-color: #880e4f;
+}
+
+.bg-chok {
+    background-color: #462f3f;
+}
+
+.bg-teal {
+    background-color: #18ba9b !important;
+}
+
+.bg-boxshadow {
+    background-color: $white-color;
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+}
+
+.bg-boxshadow-- {
+    background-color: $white-color;
+    border: 1px solid #eaeaea;
+}
+
+.white-opacity-7 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.b-bg-white-opacity-0_2 {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.bg-default-opacity-5 {
+    background-color: rgba(123, 31, 162, 0.5) !important;
+}
+
+.bg-default-opacity-8- {
+    background-color: rgba(94, 216, 79, 0.8) !important;
+}
+
+.bg-gray-2 {
+    background-color: rgba(50, 50, 50, 0.06) !important;
+}
+
+.color-deeporange {
+    color: #fe541e !important;
+}
+
+.bg-deeporange-opacity-0-1 {
+    background-color: rgba(254, 84, 30, 0.1) !important;
+}
+
+.bg-default-opacity-5 {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.bg-default-opacity-5::after {
+    position: absolute !important;
+    content: "" !important;
+    top: 0 !important;
+    left: 0 !important;
+    background-color: rgba(123, 31, 162, 0.5) !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: -1;
+}
+
+.bg-black-opacity--7 {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.table td,
+.table th {
+    padding: 15px 30px;
+}
+
+.bg-black-opacity--7::after {
+    position: absolute !important;
+    content: "" !important;
+    top: 0 !important;
+    left: 0 !important;
+    background-color: rgba(17, 17, 17, 0.7) !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: -1;
+}
+
+.bg-default-opacity-8 {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.bg-default-opacity-8::after {
+    position: absolute !important;
+    content: "" !important;
+    top: 0 !important;
+    left: 0 !important;
+    background-color: rgba(123, 31, 162, 0.8) !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+// Background Color
+
+.night-sky-bg {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%) !important;
+}
+
+.bg-smile {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
+}
+
+.bg-love-red {
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%) !important;
+}

@@ -1,0 +1,19 @@
+/* ----- Issue Tracker CSS ----- */
+
+.issu-tracker-icon {
+    @include display-flex(flex);
+    @include justify-content-between;
+    @include align-items-center;
+}
+
+.issue-info {
+    small {
+        display: block;
+        font-size: 12px;
+    }
+
+    a {
+        font-weight: 600;
+        color: $text-color;
+    }
+}

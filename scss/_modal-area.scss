@@ -1,0 +1,23 @@
+/* ----- Modals Area CSS ----- */
+
+.modal-backdrop {
+    position: relative;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101010101010 !important;
+    background-color: $dark-color;
+}
+
+.modlas---area {
+    &.bg-boxshadow {
+        padding: 40px;
+    }
+
+}
+
+.modal {
+    position: fixed;
+    top: 70px;
+}
